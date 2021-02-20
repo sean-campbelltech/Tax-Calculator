@@ -9,6 +9,6 @@ namespace Campbelltech.TaxCalculation.Domain.Data_Models
     {
         [Key]
         public TaxType TaxTypeId { get; set; }
-        public string TaxTypeDescription { get; set; }
+        public string Description { get; set; }
     }
 }
