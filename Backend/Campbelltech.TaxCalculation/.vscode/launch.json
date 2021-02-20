@@ -21,7 +21,6 @@
             },
             "env": {
                 "ASPNETCORE_ENVIRONMENT": "Development",
-                "FLAT_RATE": "17.5"
             },
             "sourceFileMap": {
                 "/Views": "${workspaceFolder}/Views"

@@ -38,8 +38,9 @@ namespace Campbelltech.TaxCalculation.Domain.Calculations
                     if (annualIncome > rate.FromAmount)
                     {
                         var rateBracket = rate.ToAmount - rate.FromAmount;
-                        var amountTaxableAtRate = Math.Min(rateBracket, annualIncome - rate.FromAmount);
-                        var taxAtRate = amountTaxableAtRate * rate.Rate;
+                        var partOfIncome = annualIncome - rate.FromAmount;
+                        var amountTaxableAtRate = Math.Min(rateBracket, partOfIncome);
+                        var taxAtRate = amountTaxableAtRate * (rate.Rate / 100m);
                         taxAmmount += taxAtRate;
                     }
                 }
@@ -48,7 +49,7 @@ namespace Campbelltech.TaxCalculation.Domain.Calculations
             }
             catch (Exception ex)
             {
-                _logger.LogError(ex, $"Error while trying to calculate progressive tax for and annual income - {annualIncome}.");
+                _logger.LogError(ex, $"Error while trying to calculate progressive tax for annual income - {annualIncome}.");
 
                 // rethrow to preserve stack details
                 throw;
