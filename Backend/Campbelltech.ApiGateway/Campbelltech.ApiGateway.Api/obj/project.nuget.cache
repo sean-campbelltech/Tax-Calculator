@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "F7BZ6ZLyENUhiY9hUhn+4c3M8WbBrTh8k4o7k7ygAOYEaxzNUCTdC8c+n9SAj4lAG5P5N9gvIP0CMbG/1tazZw==",
+  "success": true,
+  "projectFilePath": "/home/sean/Source/Tax-Calculator/Backend/Campbelltech.ApiGateway/Campbelltech.ApiGateway.Api/Campbelltech.ApiGateway.Api.csproj",
+  "expectedPackageFiles": [
+    "/home/sean/.nuget/packages/microsoft.extensions.apidescription.server/3.0.0/microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "/home/sean/.nuget/packages/microsoft.openapi/1.2.3/microsoft.openapi.1.2.3.nupkg.sha512",
+    "/home/sean/.nuget/packages/swashbuckle.aspnetcore/5.6.3/swashbuckle.aspnetcore.5.6.3.nupkg.sha512",
+    "/home/sean/.nuget/packages/swashbuckle.aspnetcore.swagger/5.6.3/swashbuckle.aspnetcore.swagger.5.6.3.nupkg.sha512",
+    "/home/sean/.nuget/packages/swashbuckle.aspnetcore.swaggergen/5.6.3/swashbuckle.aspnetcore.swaggergen.5.6.3.nupkg.sha512",
+    "/home/sean/.nuget/packages/swashbuckle.aspnetcore.swaggerui/5.6.3/swashbuckle.aspnetcore.swaggerui.5.6.3.nupkg.sha512"
+  ],
+  "logs": []
+}

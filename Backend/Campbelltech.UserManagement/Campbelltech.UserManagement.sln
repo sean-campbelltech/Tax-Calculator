@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Campbelltech.UserManagement
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Campbelltech.UserManagement.Domain", "Campbelltech.UserManagement.Domain\Campbelltech.UserManagement.Domain.csproj", "{C3120A89-9CD0-460E-9285-E064F5A0CA7E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Campbelltech.UserManagement.Test", "Campbelltech.UserManagement.Test\Campbelltech.UserManagement.Test.csproj", "{5E7D9A81-ECA7-4993-826E-61798BBF9C6A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -58,5 +60,17 @@ Global
 		{C3120A89-9CD0-460E-9285-E064F5A0CA7E}.Release|x64.Build.0 = Release|Any CPU
 		{C3120A89-9CD0-460E-9285-E064F5A0CA7E}.Release|x86.ActiveCfg = Release|Any CPU
 		{C3120A89-9CD0-460E-9285-E064F5A0CA7E}.Release|x86.Build.0 = Release|Any CPU
+		{5E7D9A81-ECA7-4993-826E-61798BBF9C6A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E7D9A81-ECA7-4993-826E-61798BBF9C6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E7D9A81-ECA7-4993-826E-61798BBF9C6A}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{5E7D9A81-ECA7-4993-826E-61798BBF9C6A}.Debug|x64.Build.0 = Debug|Any CPU
+		{5E7D9A81-ECA7-4993-826E-61798BBF9C6A}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{5E7D9A81-ECA7-4993-826E-61798BBF9C6A}.Debug|x86.Build.0 = Debug|Any CPU
+		{5E7D9A81-ECA7-4993-826E-61798BBF9C6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E7D9A81-ECA7-4993-826E-61798BBF9C6A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E7D9A81-ECA7-4993-826E-61798BBF9C6A}.Release|x64.ActiveCfg = Release|Any CPU
+		{5E7D9A81-ECA7-4993-826E-61798BBF9C6A}.Release|x64.Build.0 = Release|Any CPU
+		{5E7D9A81-ECA7-4993-826E-61798BBF9C6A}.Release|x86.ActiveCfg = Release|Any CPU
+		{5E7D9A81-ECA7-4993-826E-61798BBF9C6A}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
