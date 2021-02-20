@@ -1,8 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "xl6IIeFuk6qojmf/VPASUOhpKGie4p/pFUEZg2y67dRu4/BdxqPgYDs+ZavxuHdmnlEtIGlSX5manGePkGxabw==",
+  "dgSpecHash": "gEBOM+GdE5U67g7foNiFwro5L3BRuZ931II+gr/0F1e8lEdA0qRNcehw/HC7tuKvh3NHsY21e+bTFocbaHz3JQ==",
   "success": true,
   "projectFilePath": "/home/sean/Source/Tax-Calculator/Backend/Campbelltech.TaxCalculation/Campbelltech.TaxCalculation.Domain/Campbelltech.TaxCalculation.Domain.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "/home/sean/.nuget/packages/microsoft.extensions.dependencyinjection/5.0.1/microsoft.extensions.dependencyinjection.5.0.1.nupkg.sha512",
+    "/home/sean/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/5.0.0/microsoft.extensions.dependencyinjection.abstractions.5.0.0.nupkg.sha512",
+    "/home/sean/.nuget/packages/microsoft.extensions.logging/5.0.0/microsoft.extensions.logging.5.0.0.nupkg.sha512",
+    "/home/sean/.nuget/packages/microsoft.extensions.logging.abstractions/5.0.0/microsoft.extensions.logging.abstractions.5.0.0.nupkg.sha512",
+    "/home/sean/.nuget/packages/microsoft.extensions.options/5.0.0/microsoft.extensions.options.5.0.0.nupkg.sha512",
+    "/home/sean/.nuget/packages/microsoft.extensions.primitives/5.0.0/microsoft.extensions.primitives.5.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

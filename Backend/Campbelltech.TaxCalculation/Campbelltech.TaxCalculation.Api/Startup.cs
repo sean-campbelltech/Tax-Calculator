@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Campbelltech.TaxCalculation.Domain.Calculations;
+using Campbelltech.TaxCalculation.Domain.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -23,9 +25,15 @@ namespace Campbelltech.TaxCalculation.Api
 
         public IConfiguration Configuration { get; }
 
-        // This method gets called by the runtime. Use this method to add services to the container.
+        /// <summary>
+        /// This method gets called by the runtime and used to add services to the container.
+        /// </summary>
+        /// <param name="services">IServiceCollection that secifies the contract for a collection of service descriptors.</param>
         public void ConfigureServices(IServiceCollection services)
         {
+            // service registration for DI
+            services.AddTransient<ITaxCalculation>(x => new TaxCalculationFactory().Create(services));
+            services.AddScoped<ITaxCalculationService, TaxCalculationService>();
 
             services.AddControllers();
             services.AddSwaggerGen(c =>
