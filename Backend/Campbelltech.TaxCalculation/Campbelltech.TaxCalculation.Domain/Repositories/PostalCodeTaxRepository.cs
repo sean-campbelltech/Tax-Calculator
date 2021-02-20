@@ -1,12 +1,12 @@
 using System;
 using System.Linq;
 using System.Threading.Tasks;
-using Campbelltech.TaxCalculation.Domain.Configuration;
-using Campbelltech.TaxCalculation.Domain.Data_Models;
-using Campbelltech.TaxCalculation.Domain.Types;
-using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
+using Microsoft.EntityFrameworkCore;
+using Campbelltech.TaxCalculation.Domain.Types;
+using Campbelltech.TaxCalculation.Domain.Data_Models;
+using Campbelltech.TaxCalculation.Domain.Configuration;
 
 namespace Campbelltech.TaxCalculation.Domain.Repositories
 {
@@ -49,7 +49,7 @@ namespace Campbelltech.TaxCalculation.Domain.Repositories
             {
                 _logger.LogError(ex, $"Error while trying to retrieve tax type for postal code - {postalCode}.");
 
-                // re-throw to preserve the original call stack
+                // rethrow to preserve stack details
                 throw;
             }
         }

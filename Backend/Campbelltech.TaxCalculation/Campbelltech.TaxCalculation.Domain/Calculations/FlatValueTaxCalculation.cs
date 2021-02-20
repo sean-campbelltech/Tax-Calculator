@@ -9,7 +9,7 @@ namespace Campbelltech.TaxCalculation.Domain.Calculations
         /// </summary>
         /// <param name="annualIncome">Total income earned per annum</param>
         /// <returns>Tax amount</returns>
-        public Task<double> CalculateAsyc(double annualIncome)
+        public Task<decimal> CalculateAsyc(decimal annualIncome)
         {
             throw new System.NotImplementedException();
         }
