@@ -1,0 +1,12 @@
+/home/sean/Source/Tax-Calculator/Backend/Campbelltech.TaxCalculation/Campbelltech.TaxCalculation.Domain/bin/Debug/net5.0/Campbelltech.TaxCalculation.Domain.deps.json
+/home/sean/Source/Tax-Calculator/Backend/Campbelltech.TaxCalculation/Campbelltech.TaxCalculation.Domain/bin/Debug/net5.0/Campbelltech.TaxCalculation.Domain.dll
+/home/sean/Source/Tax-Calculator/Backend/Campbelltech.TaxCalculation/Campbelltech.TaxCalculation.Domain/bin/Debug/net5.0/ref/Campbelltech.TaxCalculation.Domain.dll
+/home/sean/Source/Tax-Calculator/Backend/Campbelltech.TaxCalculation/Campbelltech.TaxCalculation.Domain/bin/Debug/net5.0/Campbelltech.TaxCalculation.Domain.pdb
+/home/sean/Source/Tax-Calculator/Backend/Campbelltech.TaxCalculation/Campbelltech.TaxCalculation.Domain/obj/Debug/net5.0/Campbelltech.TaxCalculation.Domain.csprojAssemblyReference.cache
+/home/sean/Source/Tax-Calculator/Backend/Campbelltech.TaxCalculation/Campbelltech.TaxCalculation.Domain/obj/Debug/net5.0/Campbelltech.TaxCalculation.Domain.GeneratedMSBuildEditorConfig.editorconfig
+/home/sean/Source/Tax-Calculator/Backend/Campbelltech.TaxCalculation/Campbelltech.TaxCalculation.Domain/obj/Debug/net5.0/Campbelltech.TaxCalculation.Domain.AssemblyInfoInputs.cache
+/home/sean/Source/Tax-Calculator/Backend/Campbelltech.TaxCalculation/Campbelltech.TaxCalculation.Domain/obj/Debug/net5.0/Campbelltech.TaxCalculation.Domain.AssemblyInfo.cs
+/home/sean/Source/Tax-Calculator/Backend/Campbelltech.TaxCalculation/Campbelltech.TaxCalculation.Domain/obj/Debug/net5.0/Campbelltech.TaxCalculation.Domain.csproj.CoreCompileInputs.cache
+/home/sean/Source/Tax-Calculator/Backend/Campbelltech.TaxCalculation/Campbelltech.TaxCalculation.Domain/obj/Debug/net5.0/Campbelltech.TaxCalculation.Domain.dll
+/home/sean/Source/Tax-Calculator/Backend/Campbelltech.TaxCalculation/Campbelltech.TaxCalculation.Domain/obj/Debug/net5.0/ref/Campbelltech.TaxCalculation.Domain.dll
+/home/sean/Source/Tax-Calculator/Backend/Campbelltech.TaxCalculation/Campbelltech.TaxCalculation.Domain/obj/Debug/net5.0/Campbelltech.TaxCalculation.Domain.pdb

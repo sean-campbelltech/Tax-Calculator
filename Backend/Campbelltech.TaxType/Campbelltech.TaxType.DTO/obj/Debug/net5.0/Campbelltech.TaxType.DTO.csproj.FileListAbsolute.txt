@@ -1,0 +1,12 @@
+/home/sean/Source/Tax-Calculator/Backend/Campbelltech.TaxType/Campbelltech.TaxType.DTO/bin/Debug/net5.0/Campbelltech.TaxType.DTO.deps.json
+/home/sean/Source/Tax-Calculator/Backend/Campbelltech.TaxType/Campbelltech.TaxType.DTO/bin/Debug/net5.0/Campbelltech.TaxType.DTO.dll
+/home/sean/Source/Tax-Calculator/Backend/Campbelltech.TaxType/Campbelltech.TaxType.DTO/bin/Debug/net5.0/ref/Campbelltech.TaxType.DTO.dll
+/home/sean/Source/Tax-Calculator/Backend/Campbelltech.TaxType/Campbelltech.TaxType.DTO/bin/Debug/net5.0/Campbelltech.TaxType.DTO.pdb
+/home/sean/Source/Tax-Calculator/Backend/Campbelltech.TaxType/Campbelltech.TaxType.DTO/obj/Debug/net5.0/Campbelltech.TaxType.DTO.csprojAssemblyReference.cache
+/home/sean/Source/Tax-Calculator/Backend/Campbelltech.TaxType/Campbelltech.TaxType.DTO/obj/Debug/net5.0/Campbelltech.TaxType.DTO.GeneratedMSBuildEditorConfig.editorconfig
+/home/sean/Source/Tax-Calculator/Backend/Campbelltech.TaxType/Campbelltech.TaxType.DTO/obj/Debug/net5.0/Campbelltech.TaxType.DTO.AssemblyInfoInputs.cache
+/home/sean/Source/Tax-Calculator/Backend/Campbelltech.TaxType/Campbelltech.TaxType.DTO/obj/Debug/net5.0/Campbelltech.TaxType.DTO.AssemblyInfo.cs
+/home/sean/Source/Tax-Calculator/Backend/Campbelltech.TaxType/Campbelltech.TaxType.DTO/obj/Debug/net5.0/Campbelltech.TaxType.DTO.csproj.CoreCompileInputs.cache
+/home/sean/Source/Tax-Calculator/Backend/Campbelltech.TaxType/Campbelltech.TaxType.DTO/obj/Debug/net5.0/Campbelltech.TaxType.DTO.dll
+/home/sean/Source/Tax-Calculator/Backend/Campbelltech.TaxType/Campbelltech.TaxType.DTO/obj/Debug/net5.0/ref/Campbelltech.TaxType.DTO.dll
+/home/sean/Source/Tax-Calculator/Backend/Campbelltech.TaxType/Campbelltech.TaxType.DTO/obj/Debug/net5.0/Campbelltech.TaxType.DTO.pdb

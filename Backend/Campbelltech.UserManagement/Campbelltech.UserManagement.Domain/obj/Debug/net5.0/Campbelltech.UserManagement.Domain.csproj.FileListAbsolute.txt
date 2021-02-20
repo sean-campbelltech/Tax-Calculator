@@ -1,0 +1,12 @@
+/home/sean/Source/Tax-Calculator/Backend/Campbelltech.UserManagement/Campbelltech.UserManagement.Domain/bin/Debug/net5.0/Campbelltech.UserManagement.Domain.deps.json
+/home/sean/Source/Tax-Calculator/Backend/Campbelltech.UserManagement/Campbelltech.UserManagement.Domain/bin/Debug/net5.0/Campbelltech.UserManagement.Domain.dll
+/home/sean/Source/Tax-Calculator/Backend/Campbelltech.UserManagement/Campbelltech.UserManagement.Domain/bin/Debug/net5.0/ref/Campbelltech.UserManagement.Domain.dll
+/home/sean/Source/Tax-Calculator/Backend/Campbelltech.UserManagement/Campbelltech.UserManagement.Domain/bin/Debug/net5.0/Campbelltech.UserManagement.Domain.pdb
+/home/sean/Source/Tax-Calculator/Backend/Campbelltech.UserManagement/Campbelltech.UserManagement.Domain/obj/Debug/net5.0/Campbelltech.UserManagement.Domain.csprojAssemblyReference.cache
+/home/sean/Source/Tax-Calculator/Backend/Campbelltech.UserManagement/Campbelltech.UserManagement.Domain/obj/Debug/net5.0/Campbelltech.UserManagement.Domain.GeneratedMSBuildEditorConfig.editorconfig
+/home/sean/Source/Tax-Calculator/Backend/Campbelltech.UserManagement/Campbelltech.UserManagement.Domain/obj/Debug/net5.0/Campbelltech.UserManagement.Domain.AssemblyInfoInputs.cache
+/home/sean/Source/Tax-Calculator/Backend/Campbelltech.UserManagement/Campbelltech.UserManagement.Domain/obj/Debug/net5.0/Campbelltech.UserManagement.Domain.AssemblyInfo.cs
+/home/sean/Source/Tax-Calculator/Backend/Campbelltech.UserManagement/Campbelltech.UserManagement.Domain/obj/Debug/net5.0/Campbelltech.UserManagement.Domain.csproj.CoreCompileInputs.cache
+/home/sean/Source/Tax-Calculator/Backend/Campbelltech.UserManagement/Campbelltech.UserManagement.Domain/obj/Debug/net5.0/Campbelltech.UserManagement.Domain.dll
+/home/sean/Source/Tax-Calculator/Backend/Campbelltech.UserManagement/Campbelltech.UserManagement.Domain/obj/Debug/net5.0/ref/Campbelltech.UserManagement.Domain.dll
+/home/sean/Source/Tax-Calculator/Backend/Campbelltech.UserManagement/Campbelltech.UserManagement.Domain/obj/Debug/net5.0/Campbelltech.UserManagement.Domain.pdb
