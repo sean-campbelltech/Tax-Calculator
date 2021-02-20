@@ -21,14 +21,14 @@ namespace Campbelltech.TaxCalculation.Api.Controllers
 
         /// <summary>
         /// Calculates the total tax payable for a given postal code and annual salary
-        /// </summary>
+        /// </summary>  
         /// <param name="request">JSON representation of the TaxCalculationRequest object</param>
-        /// <response code="201">If the tax calculation request was processed successfully and the results were persisted to the database</response>  
-        /// <response code="202">If the tax calculation request was processed successfully but the results were not persisted to the database<</response>  
+        /// <response code="201">If the tax calculation request was processed successfully and the results were persisted to the database</response>
+        /// <response code="202">If the tax calculation request was processed successfully but the results were not persisted to the database</response>
         /// <response code="400">If request validation failed</response>         
         /// <response code="401">Unauthorised - No token, invalid token or token expired</response>
         /// <response code="403">Forbidden - The user has been authenticated but is not allowed to make a tax calculation request</response> 
-        /// <response code="500">Internal error in tax calculation process</response>      
+        /// <response code="500">Internal error in tax calculation process</response>    
         /// <returns>ActionResult + TaxCalculationResponse</returns>
         [HttpPost]
         [ProducesResponseType(201)]
@@ -41,7 +41,7 @@ namespace Campbelltech.TaxCalculation.Api.Controllers
         {
             try
             {
-                // retrieve the username from the JWT security claims
+                // retrieve the username from the JWT claims
                 var requestedByUser = HttpContext.User?.Identity?.Name;
 
                 // execute main tax calculation logic

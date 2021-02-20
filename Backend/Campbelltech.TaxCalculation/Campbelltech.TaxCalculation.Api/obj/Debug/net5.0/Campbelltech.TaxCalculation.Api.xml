@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Campbelltech.TaxCalculation.Api</name>
+    </assembly>
+    <members>
+        <member name="M:Campbelltech.TaxCalculation.Api.Controllers.CalculateTaxController.PostAsync(Campbelltech.TaxCalculation.DTO.Requests.TaxCalculationRequest)">
+            <summary>
+            Calculates the total tax payable for a given postal code and annual salary
+            </summary>  
+            <param name="request">JSON representation of the TaxCalculationRequest object</param>
+            <response code="201">If the tax calculation request was processed successfully and the results were persisted to the database</response>
+            <response code="202">If the tax calculation request was processed successfully but the results were not persisted to the database</response>
+            <response code="400">If request validation failed</response>         
+            <response code="401">Unauthorised - No token, invalid token or token expired</response>
+            <response code="403">Forbidden - The user has been authenticated but is not allowed to make a tax calculation request</response> 
+            <response code="500">Internal error in tax calculation process</response>    
+            <returns>ActionResult + TaxCalculationResponse</returns>
+        </member>
+        <member name="M:Campbelltech.TaxCalculation.Api.Startup.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            This method gets called by the runtime and used to add services to the container.
+            </summary>
+            <param name="services">IServiceCollection that secifies the contract for a collection of service descriptors.</param>
+        </member>
+    </members>
+</doc>

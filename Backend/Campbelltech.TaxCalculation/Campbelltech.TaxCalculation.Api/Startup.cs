@@ -1,6 +1,8 @@
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
+using System.Reflection;
 using System.Threading.Tasks;
 using Campbelltech.TaxCalculation.Domain.Calculations;
 using Campbelltech.TaxCalculation.Domain.Repositories;
@@ -33,6 +35,7 @@ namespace Campbelltech.TaxCalculation.Api
         public void ConfigureServices(IServiceCollection services)
         {
             // service registration for DI
+            services.AddScoped<IProgressiveTaxRateRepository, ProgressiveTaxRateRepository>();
             var taxCalculation = new TaxCalculationFactory().Create(services);
             services.AddTransient<ITaxCalculation>(x => taxCalculation);
             services.AddScoped<IPostalCodeTaxRepository, PostalCodeTaxRepository>();
@@ -43,6 +46,11 @@ namespace Campbelltech.TaxCalculation.Api
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "Campbelltech.TaxCalculation.Api", Version = "v1" });
+
+                // set the comments path for the Swagger JSON and UI.
+                var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
+                var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
+                c.IncludeXmlComments(xmlPath);
             });
         }
 

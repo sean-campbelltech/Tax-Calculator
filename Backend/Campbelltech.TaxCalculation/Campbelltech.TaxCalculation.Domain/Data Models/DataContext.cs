@@ -15,6 +15,7 @@ namespace Campbelltech.TaxCalculation.Domain.Data_Models
 
         public DbSet<PostalCodeTaxModel> PostalCodeTaxes { get; set; }
         public DbSet<TaxCalculationModel> TaxCalculations { get; set; }
+        public DbSet<ProgressiveTaxRateModel> ProgressiveTaxRates { get; set; }
 
         /// <summary>
         /// Used to configure the database context

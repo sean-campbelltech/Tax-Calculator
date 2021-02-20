@@ -82,7 +82,7 @@ namespace Campbelltech.TaxCalculation.Domain.Services
             }
             catch (Exception ex)
             {
-                _logger.LogError(ex, $"Error while trying to calculate tax for postal code - {request?.PostalCode ?? ("Unknown")}.");
+                _logger.LogError(ex, $"Error while trying to calculate tax for postal code - {request?.PostalCode ?? ("Unknown")} and annual income - {request.AnnualIncome}.");
 
                 // rethrow to preserve stack details
                 throw;
