@@ -43,7 +43,7 @@ namespace Campbelltech.TaxCalculation.Domain.Services
                 var postalCode = request.PostalCode;
 
                 // first retrieve the tax type for the given postal Code
-                var taxType = await _postalCodeTaxRepository.GetAsync(request.PostalCode);
+                var taxType = await _postalCodeTaxRepository.GetAsync(postalCode);
 
                 // if unknown, it means it is a client error, thus respond with 400 - Bad Request
                 if (taxType == TaxType.Unknown)
@@ -54,13 +54,17 @@ namespace Campbelltech.TaxCalculation.Domain.Services
                             Message = $"The {nameof(postalCode)}: {postalCode} that was provided is not a valid {nameof(postalCode)}"
                         });
 
-                // then, let factory method resolve the correct implementation of ITaxCalculation and calculate tax
+                // let the factory method resolve the correct implementation of ITaxCalculation without exposing the creation logic of the factory to the client 
                 var taxCalculation = _taxCalculationResolver(taxType);
-                var taxAmount = await taxCalculation.CalculateAsyc(request.AnnualIncome);
+                var annualIncome = request.AnnualIncome;
 
+                // execute main tax calculation logic
+                var taxAmount = await taxCalculation.CalculateAsyc(annualIncome);
+
+                // use a builder to separate the construction of the TaxCalculationModel from its representation
                 var model = new TaxCalculationModelBuilder()
-                            .AddPostalCode(request.PostalCode)
-                            .AddAnnualIncome(request.AnnualIncome)
+                            .AddPostalCode(postalCode)
+                            .AddAnnualIncome(annualIncome)
                             .AddTaxAmount(taxAmount)
                             .AddRequestedBy(requestedBy)
                             .Build();
@@ -68,6 +72,7 @@ namespace Campbelltech.TaxCalculation.Domain.Services
                 // then store the tax results to the database
                 var persisted = await _taxCalculationRepository.SaveAsync(model);
 
+                // use a builder to separate the construction of the complex Tuple result object from its representation
                 var result = new ResultBuilder(persisted)
                             .AddTaxAmount(taxAmount)
                             .AddTaxType(taxType)
