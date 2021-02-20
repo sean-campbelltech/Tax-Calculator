@@ -8,6 +8,12 @@ namespace Campbelltech.TaxCalculation.Domain.Services
 {
     public interface ITaxCalculationService
     {
-        Task<Tuple<HttpStatusCode, TaxCalculationResponse>> CalculateAsync(TaxCalculationRequest request);
+        /// <summary>
+        /// Main method that facilitates the tax calculation request.
+        /// </summary>
+        /// <param name="request">TaxCalculationRequest object</param>
+        /// <param name="requestBy">Username of person that requested the tax calculation</param>
+        /// <returns>HTTP Status Code + TaxCalculationResponse</returns>
+        Task<Tuple<HttpStatusCode, TaxCalculationResponse>> CalculateAsync(TaxCalculationRequest request, string requestedBy);
     }
 }

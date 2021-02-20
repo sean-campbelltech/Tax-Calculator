@@ -1,26 +1,30 @@
 using System;
 using System.Net;
 using System.Threading.Tasks;
-using Campbelltech.TaxCalculation.Domain.Calculations;
-using Campbelltech.TaxCalculation.Domain.Repositories;
+using Microsoft.Extensions.Logging;
 using Campbelltech.TaxCalculation.Domain.Types;
 using Campbelltech.TaxCalculation.DTO.Requests;
 using Campbelltech.TaxCalculation.DTO.Responses;
-using Microsoft.Extensions.Logging;
+using Campbelltech.TaxCalculation.Domain.Repositories;
+using Campbelltech.TaxCalculation.Domain.Calculations;
+using Campbelltech.TaxCalculation.Domain.Mapping;
 
 namespace Campbelltech.TaxCalculation.Domain.Services
 {
     public class TaxCalculationService : ITaxCalculationService
     {
         private readonly Func<TaxType, ITaxCalculation> _taxCalculationResolver;
+        private readonly ITaxCalculationRepository _taxCalculationRepository;
         private readonly IPostalCodeTaxRepository _postalCodeTaxRepository;
         private readonly ILogger<TaxCalculationService> _logger;
 
         public TaxCalculationService(
             Func<TaxType, ITaxCalculation> taxCalculationResolver,
+            ITaxCalculationRepository taxCalculationRepository,
             IPostalCodeTaxRepository postalCodeTaxRepository,
             ILogger<TaxCalculationService> logger)
         {
+            _taxCalculationRepository = taxCalculationRepository;
             _postalCodeTaxRepository = postalCodeTaxRepository;
             _taxCalculationResolver = taxCalculationResolver;
             _logger = logger;
@@ -30,8 +34,9 @@ namespace Campbelltech.TaxCalculation.Domain.Services
         /// Main method that facilitates the tax calculation request.
         /// </summary>
         /// <param name="request">TaxCalculationRequest object</param>
+        /// <param name="requestBy">Username of person that requested the tax calculation</param>
         /// <returns>HTTP Status Code + TaxCalculationResponse</returns>
-        public async Task<Tuple<HttpStatusCode, TaxCalculationResponse>> CalculateAsync(TaxCalculationRequest request)
+        public async Task<Tuple<HttpStatusCode, TaxCalculationResponse>> CalculateAsync(TaxCalculationRequest request, string requestedBy)
         {
             try
             {
@@ -46,14 +51,29 @@ namespace Campbelltech.TaxCalculation.Domain.Services
                         HttpStatusCode.BadRequest,
                         new TaxCalculationResponse
                         {
-                            Message = $"The {nameof(postalCode)}: {postalCode} that you have provided is not a valid {nameof(postalCode)}"
+                            Message = $"The {nameof(postalCode)}: {postalCode} that was provided is not a valid {nameof(postalCode)}"
                         });
 
                 // then, let factory method resolve the correct implementation of ITaxCalculation and calculate tax
                 var taxCalculation = _taxCalculationResolver(taxType);
                 var taxAmount = await taxCalculation.CalculateAsyc(request.AnnualIncome);
 
-                throw new NotImplementedException();
+                var model = new TaxCalculationModelBuilder()
+                            .AddPostalCode(request.PostalCode)
+                            .AddAnnualIncome(request.AnnualIncome)
+                            .AddTaxAmount(taxAmount)
+                            .AddRequestedBy(requestedBy)
+                            .Build();
+
+                // then store the tax results to the database
+                var persisted = await _taxCalculationRepository.SaveAsync(model);
+
+                var result = new ResultBuilder(persisted)
+                            .AddTaxAmount(taxAmount)
+                            .AddTaxType(taxType)
+                            .Build();
+
+                return result;
             }
             catch (Exception ex)
             {

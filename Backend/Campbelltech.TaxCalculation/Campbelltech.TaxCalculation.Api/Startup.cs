@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Campbelltech.TaxCalculation.Domain.Calculations;
+using Campbelltech.TaxCalculation.Domain.Repositories;
 using Campbelltech.TaxCalculation.Domain.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -32,6 +33,7 @@ namespace Campbelltech.TaxCalculation.Api
         public void ConfigureServices(IServiceCollection services)
         {
             // service registration for DI
+            services.AddScoped<IPostalCodeTaxRepository, PostalCodeTaxRepository>();
             services.AddTransient<ITaxCalculation>(x => new TaxCalculationFactory().Create(services));
             services.AddScoped<ITaxCalculationService, TaxCalculationService>();
 
