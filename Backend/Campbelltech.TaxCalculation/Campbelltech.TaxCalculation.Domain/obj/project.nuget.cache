@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "oGcQdu6WgWLULGdqqJERnyJVi3wnL/DhLGHdJ1oJL03Is4FFIG5xe6ksqzdlmujCfAXknKfNDfgM11W6rmT8aw==",
+  "dgSpecHash": "kq2K5H3yJCvLRE38QxZ4ZxhlvOVw/SD7PQJjq7jaQMeP0vrbMseaxN3DdCD4IiMMuJxU4CDEqG7lMxBhZRQ/VQ==",
   "success": true,
   "projectFilePath": "/home/sean/Source/Tax-Calculator/Backend/Campbelltech.TaxCalculation/Campbelltech.TaxCalculation.Domain/Campbelltech.TaxCalculation.Domain.csproj",
   "expectedPackageFiles": [

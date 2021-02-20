@@ -145,7 +145,11 @@
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "/home/sean/Source/Tax-Calculator/Backend/Campbelltech.TaxCalculation/Campbelltech.TaxCalculation.DTO/Campbelltech.TaxCalculation.DTO.csproj": {
+                "projectPath": "/home/sean/Source/Tax-Calculator/Backend/Campbelltech.TaxCalculation/Campbelltech.TaxCalculation.DTO/Campbelltech.TaxCalculation.DTO.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -158,6 +162,10 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.3, )"
+            },
             "Microsoft.Extensions.DependencyInjection": {
               "target": "Package",
               "version": "[5.0.1, )"

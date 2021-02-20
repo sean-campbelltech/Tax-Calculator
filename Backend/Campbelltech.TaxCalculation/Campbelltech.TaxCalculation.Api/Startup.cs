@@ -33,8 +33,10 @@ namespace Campbelltech.TaxCalculation.Api
         public void ConfigureServices(IServiceCollection services)
         {
             // service registration for DI
+            var taxCalculation = new TaxCalculationFactory().Create(services);
+            services.AddTransient<ITaxCalculation>(x => taxCalculation);
             services.AddScoped<IPostalCodeTaxRepository, PostalCodeTaxRepository>();
-            services.AddTransient<ITaxCalculation>(x => new TaxCalculationFactory().Create(services));
+            services.AddScoped<ITaxCalculationRepository, TaxCalculationRepository>();
             services.AddScoped<ITaxCalculationService, TaxCalculationService>();
 
             services.AddControllers();

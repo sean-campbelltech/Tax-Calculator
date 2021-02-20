@@ -1481,6 +1481,16 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XmlSerializer.dll": {}
         }
+      },
+      "Campbelltech.TaxCalculation.DTO/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/Campbelltech.TaxCalculation.DTO.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Campbelltech.TaxCalculation.DTO.dll": {}
+        }
       }
     }
   },
@@ -5693,10 +5703,16 @@
         "system.xml.xmlserializer.4.3.0.nupkg.sha512",
         "system.xml.xmlserializer.nuspec"
       ]
+    },
+    "Campbelltech.TaxCalculation.DTO/1.0.0": {
+      "type": "project",
+      "path": "../Campbelltech.TaxCalculation.DTO/Campbelltech.TaxCalculation.DTO.csproj",
+      "msbuildProject": "../Campbelltech.TaxCalculation.DTO/Campbelltech.TaxCalculation.DTO.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net5.0": [
+      "Campbelltech.TaxCalculation.DTO >= 1.0.0",
       "Microsoft.EntityFrameworkCore.SqlServer >= 5.0.3",
       "Microsoft.Extensions.DependencyInjection >= 5.0.1",
       "Microsoft.Extensions.Logging >= 5.0.0"
@@ -5726,7 +5742,11 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "/home/sean/Source/Tax-Calculator/Backend/Campbelltech.TaxCalculation/Campbelltech.TaxCalculation.DTO/Campbelltech.TaxCalculation.DTO.csproj": {
+              "projectPath": "/home/sean/Source/Tax-Calculator/Backend/Campbelltech.TaxCalculation/Campbelltech.TaxCalculation.DTO/Campbelltech.TaxCalculation.DTO.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

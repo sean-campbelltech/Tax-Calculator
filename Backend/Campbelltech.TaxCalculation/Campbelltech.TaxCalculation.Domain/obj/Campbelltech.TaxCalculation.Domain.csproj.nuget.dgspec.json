@@ -4,6 +4,58 @@
     "/home/sean/Source/Tax-Calculator/Backend/Campbelltech.TaxCalculation/Campbelltech.TaxCalculation.Domain/Campbelltech.TaxCalculation.Domain.csproj": {}
   },
   "projects": {
+    "/home/sean/Source/Tax-Calculator/Backend/Campbelltech.TaxCalculation/Campbelltech.TaxCalculation.DTO/Campbelltech.TaxCalculation.DTO.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/sean/Source/Tax-Calculator/Backend/Campbelltech.TaxCalculation/Campbelltech.TaxCalculation.DTO/Campbelltech.TaxCalculation.DTO.csproj",
+        "projectName": "Campbelltech.TaxCalculation.DTO",
+        "projectPath": "/home/sean/Source/Tax-Calculator/Backend/Campbelltech.TaxCalculation/Campbelltech.TaxCalculation.DTO/Campbelltech.TaxCalculation.DTO.csproj",
+        "packagesPath": "/home/sean/.nuget/packages/",
+        "outputPath": "/home/sean/Source/Tax-Calculator/Backend/Campbelltech.TaxCalculation/Campbelltech.TaxCalculation.DTO/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/sean/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/5.0.103/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "/home/sean/Source/Tax-Calculator/Backend/Campbelltech.TaxCalculation/Campbelltech.TaxCalculation.Domain/Campbelltech.TaxCalculation.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -25,7 +77,11 @@
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "/home/sean/Source/Tax-Calculator/Backend/Campbelltech.TaxCalculation/Campbelltech.TaxCalculation.DTO/Campbelltech.TaxCalculation.DTO.csproj": {
+                "projectPath": "/home/sean/Source/Tax-Calculator/Backend/Campbelltech.TaxCalculation/Campbelltech.TaxCalculation.DTO/Campbelltech.TaxCalculation.DTO.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
