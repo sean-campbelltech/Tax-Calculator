@@ -1,10 +1,27 @@
 ﻿@page
 @model IndexModel
 @{
-    ViewData["Title"] = "Home page";
+    ViewData["Title"] = "Tax Calculator";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<h2 class="display-4">Tax Calculator</h2>
+
+<form method="post" class="form-horizontal">
+    <div class="form-group">
+        <label for="PostalCode" class="control-label col-sm-3">Postal Code</label>
+        <div class="col-sm-8">
+            <select name="PostalCode" class="form-control">
+                <option value="">Select</option>
+            </select>
+        </div>
+    </div>
+
+    <label for="AnnualIncome" class="control-label col-sm-3">Annual Income</label>
+    <div class="col-sm-8">
+        <input type="text" asp-for="AnnualIncome" class="form-control" />
+    </div>
+
+    <div class="col-sm-offset-2 col-sm-8">
+        <input type="submit" value="Calculate Tax" class="btn btn-default" />
+    </div>
+</form>

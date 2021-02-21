@@ -2,6 +2,10 @@
 
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
+    <PackageId>Campbelltech.PostalCodeTax.DTO</PackageId>
+    <Authors>Campbelltech</Authors>
+    <Description>Package contains all the Data Transfer Objects to simplify intergration with the PostalCodeTax API</Description>
+    <Version>1.0.0</Version>
   </PropertyGroup>
 
 </Project>

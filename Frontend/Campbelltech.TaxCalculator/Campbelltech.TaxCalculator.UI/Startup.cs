@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Campbelltech.TaxCalculator.UI.Clients;
+using Campbelltech.TaxCalculator.UI.Configuration;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -23,6 +25,10 @@ namespace Campbelltech.TaxCalculator.UI
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            // register services for DI
+            services.Configure<Config>(Configuration);
+            services.AddScoped<IPostalCodeTaxClient, PostalCodeTaxClient>();
+
             services.AddRazorPages();
         }
 

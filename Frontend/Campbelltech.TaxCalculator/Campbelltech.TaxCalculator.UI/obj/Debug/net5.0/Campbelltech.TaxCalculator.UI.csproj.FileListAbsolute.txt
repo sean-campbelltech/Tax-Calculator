@@ -38,3 +38,8 @@
 /home/sean/Source/Tax-Calculator/Frontend/Campbelltech.TaxCalculator/Campbelltech.TaxCalculator.UI/obj/Debug/net5.0/Campbelltech.TaxCalculator.UI.pdb
 /home/sean/Source/Tax-Calculator/Frontend/Campbelltech.TaxCalculator/Campbelltech.TaxCalculator.UI/obj/Debug/net5.0/Campbelltech.TaxCalculator.UI.genruntimeconfig.cache
 /home/sean/Source/Tax-Calculator/Frontend/Campbelltech.TaxCalculator/Campbelltech.TaxCalculator.UI/obj/Debug/net5.0/Campbelltech.TaxCalculator.UI.csproj.CopyComplete
+/home/sean/Source/Tax-Calculator/Frontend/Campbelltech.TaxCalculator/Campbelltech.TaxCalculator.UI/bin/Debug/net5.0/Campbelltech.PostalCodeTax.DTO.dll
+/home/sean/Source/Tax-Calculator/Frontend/Campbelltech.TaxCalculator/Campbelltech.TaxCalculator.UI/bin/Debug/net5.0/System.Net.Http.Extensions.dll
+/home/sean/Source/Tax-Calculator/Frontend/Campbelltech.TaxCalculator/Campbelltech.TaxCalculator.UI/bin/Debug/net5.0/System.Net.Http.Formatting.dll
+/home/sean/Source/Tax-Calculator/Frontend/Campbelltech.TaxCalculator/Campbelltech.TaxCalculator.UI/bin/Debug/net5.0/System.Net.Http.Primitives.dll
+/home/sean/Source/Tax-Calculator/Frontend/Campbelltech.TaxCalculator/Campbelltech.TaxCalculator.UI/bin/Debug/net5.0/Newtonsoft.Json.dll

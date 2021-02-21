@@ -1,8 +1,23 @@
 {
   "version": 2,
-  "dgSpecHash": "p7cwavrIXskvszpVxCyY9bl6wpW/VRGG4Bc5ZDqTsOBC9T0uSler9gGpRV24HdGY90vtwn/yDHG6STCpttX1vw==",
+  "dgSpecHash": "U5XG+2QBnfnqWsrqS+Vpz1GrnJAaQ3fIbHdgnzf3d0wdFpEovfmgNHCZZmZqXlZsTQsFvMfQNtO2zbPn+AeagA==",
   "success": true,
   "projectFilePath": "/home/sean/Source/Tax-Calculator/Frontend/Campbelltech.TaxCalculator/Campbelltech.TaxCalculator.UI/Campbelltech.TaxCalculator.UI.csproj",
-  "expectedPackageFiles": [],
-  "logs": []
+  "expectedPackageFiles": [
+    "/home/sean/.nuget/packages/campbelltech.postalcodetax.dto/1.0.0/campbelltech.postalcodetax.dto.1.0.0.nupkg.sha512",
+    "/home/sean/.nuget/packages/newtonsoft.json/12.0.3/newtonsoft.json.12.0.3.nupkg.sha512",
+    "/home/sean/.nuget/packages/system.net.http.formatting.extension/5.2.3/system.net.http.formatting.extension.5.2.3.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'System.Net.Http.Formatting.Extension 5.2.3' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework 'net5.0'. This package may not be fully compatible with your project.",
+      "libraryId": "System.Net.Http.Formatting.Extension",
+      "targetGraphs": [
+        "net5.0"
+      ]
+    }
+  ]
 }
