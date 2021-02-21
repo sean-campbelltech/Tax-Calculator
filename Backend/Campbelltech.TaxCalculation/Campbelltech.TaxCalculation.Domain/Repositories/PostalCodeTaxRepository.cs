@@ -36,11 +36,10 @@ namespace Campbelltech.TaxCalculation.Domain.Repositories
                 using (var context = new DataContext(_connectionString))
                 {
                     var postalCodeTax = await context.PostalCodeTaxes.AsNoTracking()
-                                                .Include(i => i.TaxType).AsNoTracking()
                                                 .Where(x => x.PostalCode.Equals(postalCode))
                                                 .FirstOrDefaultAsync();
 
-                    var taxType = postalCodeTax?.TaxType?.TaxTypeId ?? TaxType.Unknown;
+                    var taxType = postalCodeTax?.TaxTypeId ?? TaxType.Unknown;
 
                     return taxType;
                 }

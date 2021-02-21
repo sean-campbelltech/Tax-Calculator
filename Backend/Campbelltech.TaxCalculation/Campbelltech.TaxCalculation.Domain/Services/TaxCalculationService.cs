@@ -5,9 +5,9 @@ using Microsoft.Extensions.Logging;
 using Campbelltech.TaxCalculation.Domain.Types;
 using Campbelltech.TaxCalculation.DTO.Requests;
 using Campbelltech.TaxCalculation.DTO.Responses;
+using Campbelltech.TaxCalculation.Domain.Mapping;
 using Campbelltech.TaxCalculation.Domain.Repositories;
 using Campbelltech.TaxCalculation.Domain.Calculations;
-using Campbelltech.TaxCalculation.Domain.Mapping;
 
 namespace Campbelltech.TaxCalculation.Domain.Services
 {

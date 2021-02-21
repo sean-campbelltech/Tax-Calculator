@@ -1,5 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using Campbelltech.TaxCalculation.Domain.Types;
 
 namespace Campbelltech.TaxCalculation.Domain.Data_Models
 {
@@ -8,8 +9,6 @@ namespace Campbelltech.TaxCalculation.Domain.Data_Models
     {
         [Key]
         public string PostalCode { get; set; }
-
-        [ForeignKey("TaxTypeId")]
-        public TaxTypeModel TaxType { get; set; }
+        public TaxType TaxTypeId { get; set; }
     }
 }

@@ -1,8 +1,8 @@
 using System;
 using System.Linq;
 using System.Threading.Tasks;
-using Campbelltech.TaxCalculation.Domain.Repositories;
 using Microsoft.Extensions.Logging;
+using Campbelltech.TaxCalculation.Domain.Repositories;
 
 namespace Campbelltech.TaxCalculation.Domain.Calculations
 {
@@ -38,8 +38,8 @@ namespace Campbelltech.TaxCalculation.Domain.Calculations
                     if (annualIncome > rate.FromAmount)
                     {
                         var rateBracket = rate.ToAmount - rate.FromAmount;
-                        var partOfIncome = annualIncome - rate.FromAmount;
-                        var amountTaxableAtRate = Math.Min(rateBracket, partOfIncome);
+                        var portionOfIncome = annualIncome - rate.FromAmount;
+                        var amountTaxableAtRate = Math.Min(rateBracket, portionOfIncome);
                         var taxAtRate = amountTaxableAtRate * (rate.Rate / 100m);
                         taxAmmount += taxAtRate;
                     }

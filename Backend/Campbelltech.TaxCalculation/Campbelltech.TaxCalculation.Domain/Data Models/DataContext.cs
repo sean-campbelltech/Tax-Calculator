@@ -1,5 +1,4 @@
 using System;
-using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
 
 namespace Campbelltech.TaxCalculation.Domain.Data_Models
@@ -39,7 +38,7 @@ namespace Campbelltech.TaxCalculation.Domain.Data_Models
         /// <param name="modelBuilder">Provides a simple API surface for configuring a Microsoft.EntityFrameworkCore.Metadata.IMutableModel that defines the shape of your entities, the relationships between them, and how they map to the database.</param>
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<TaxTypeModel>()
+            modelBuilder.Entity<PostalCodeTaxModel>()
                 .Property(c => c.TaxTypeId)
                 .HasConversion<int>();
         }

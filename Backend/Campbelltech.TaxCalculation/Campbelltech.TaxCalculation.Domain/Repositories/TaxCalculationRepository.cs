@@ -32,7 +32,7 @@ namespace Campbelltech.TaxCalculation.Domain.Repositories
 
                 using (var context = new DataContext(_connectionString))
                 {
-                    context.Add(model);
+                    context.TaxCalculations.Add(model);
                     var result = await context.SaveChangesAsync();
 
                     return result > 0;

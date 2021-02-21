@@ -1,8 +1,8 @@
 using System;
 using System.Threading.Tasks;
-using Campbelltech.TaxCalculation.Domain.Configuration;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
+using Campbelltech.TaxCalculation.Domain.Configuration;
 
 namespace Campbelltech.TaxCalculation.Domain.Calculations
 {
