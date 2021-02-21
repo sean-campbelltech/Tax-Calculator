@@ -45,11 +45,13 @@ A Tax Calculator that is based on ASP.NET Core MVC (Front-End) and ASP.NET Core 
 
   - Describe how the code complies to LSP.
   
-- I: Interface Segregatopn Priniciple (ISP)
+- I: Interface Segregation Priniciple (ISP)
 
   - Describe how the code complies to ISP.
 
 - D: Dependency Inversion Priniciple (DIP)
+
+  - Describe how the code complies to DIP.
 
 ## Design Descriptions
 
