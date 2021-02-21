@@ -11,6 +11,15 @@
           "lib/net5.0/Campbelltech.PostalCodeTax.DTO.dll": {}
         }
       },
+      "Campbelltech.TaxCalculation.DTO/1.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net5.0/Campbelltech.TaxCalculation.DTO.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/Campbelltech.TaxCalculation.DTO.dll": {}
+        }
+      },
       "Newtonsoft.Json/12.0.3": {
         "type": "package",
         "compile": {
@@ -46,6 +55,18 @@
         "campbelltech.postalcodetax.dto.1.0.0.nupkg.sha512",
         "campbelltech.postalcodetax.dto.nuspec",
         "lib/net5.0/Campbelltech.PostalCodeTax.DTO.dll"
+      ]
+    },
+    "Campbelltech.TaxCalculation.DTO/1.0.0": {
+      "sha512": "TEbLOpg09LI63ZdVE6IWVijopybTia5e4KVTEbXhVME3lkjnrjjaUEqrUQBr9rS7SZTKcXiI3Hwxlf+h4JvdvA==",
+      "type": "package",
+      "path": "campbelltech.taxcalculation.dto/1.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "campbelltech.taxcalculation.dto.1.0.0.nupkg.sha512",
+        "campbelltech.taxcalculation.dto.nuspec",
+        "lib/net5.0/Campbelltech.TaxCalculation.DTO.dll"
       ]
     },
     "Newtonsoft.Json/12.0.3": {
@@ -97,6 +118,7 @@
   "projectFileDependencyGroups": {
     "net5.0": [
       "Campbelltech.PostalCodeTax.DTO >= 1.0.0",
+      "Campbelltech.TaxCalculation.DTO >= 1.0.0",
       "Newtonsoft.Json >= 12.0.3",
       "System.Net.Http.Formatting.Extension >= 5.2.3"
     ]
@@ -139,6 +161,10 @@
         "targetAlias": "net5.0",
         "dependencies": {
           "Campbelltech.PostalCodeTax.DTO": {
+            "target": "Package",
+            "version": "[1.0.0, )"
+          },
+          "Campbelltech.TaxCalculation.DTO": {
             "target": "Package",
             "version": "[1.0.0, )"
           },

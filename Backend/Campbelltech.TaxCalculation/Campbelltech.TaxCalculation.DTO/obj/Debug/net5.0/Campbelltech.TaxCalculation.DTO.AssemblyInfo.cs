@@ -11,8 +11,10 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("Campbelltech.TaxCalculation.DTO")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("Campbelltech")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
+[assembly: System.Reflection.AssemblyDescriptionAttribute("Package contains all the Data Transfer Objects to simplify intergration with the " +
+    "TaxCalculation API")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
 [assembly: System.Reflection.AssemblyProductAttribute("Campbelltech.TaxCalculation.DTO")]

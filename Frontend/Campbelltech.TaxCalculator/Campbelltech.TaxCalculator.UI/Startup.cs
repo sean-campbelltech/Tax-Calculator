@@ -28,6 +28,7 @@ namespace Campbelltech.TaxCalculator.UI
             // register services for DI
             services.Configure<Config>(Configuration);
             services.AddScoped<IPostalCodeTaxClient, PostalCodeTaxClient>();
+            services.AddScoped<ITaxCalculationClient, TaxCalculationClient>();
 
             services.AddRazorPages();
         }

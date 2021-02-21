@@ -42,6 +42,10 @@
               "target": "Package",
               "version": "[1.0.0, )"
             },
+            "Campbelltech.TaxCalculation.DTO": {
+              "target": "Package",
+              "version": "[1.0.0, )"
+            },
             "Newtonsoft.Json": {
               "target": "Package",
               "version": "[12.0.3, )"

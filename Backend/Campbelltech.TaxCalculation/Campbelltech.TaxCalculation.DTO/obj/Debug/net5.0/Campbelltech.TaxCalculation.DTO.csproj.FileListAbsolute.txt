@@ -9,3 +9,4 @@
 /home/sean/Source/Tax-Calculator/Backend/Campbelltech.TaxCalculation/Campbelltech.TaxCalculation.DTO/obj/Debug/net5.0/Campbelltech.TaxCalculation.DTO.dll
 /home/sean/Source/Tax-Calculator/Backend/Campbelltech.TaxCalculation/Campbelltech.TaxCalculation.DTO/obj/Debug/net5.0/ref/Campbelltech.TaxCalculation.DTO.dll
 /home/sean/Source/Tax-Calculator/Backend/Campbelltech.TaxCalculation/Campbelltech.TaxCalculation.DTO/obj/Debug/net5.0/Campbelltech.TaxCalculation.DTO.pdb
+/home/sean/Source/Tax-Calculator/Backend/Campbelltech.TaxCalculation/Campbelltech.TaxCalculation.DTO/obj/Debug/net5.0/Campbelltech.TaxCalculation.DTO.csprojAssemblyReference.cache

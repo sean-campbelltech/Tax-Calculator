@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "U5XG+2QBnfnqWsrqS+Vpz1GrnJAaQ3fIbHdgnzf3d0wdFpEovfmgNHCZZmZqXlZsTQsFvMfQNtO2zbPn+AeagA==",
+  "dgSpecHash": "m3Cemdb5gYzpPltiytejmjJQubreskDcMWa9Ppn9YZgjoPyjqRs0rFsn0fLe/UIC6dxsMAFaFePg1e05TO1Hmw==",
   "success": true,
   "projectFilePath": "/home/sean/Source/Tax-Calculator/Frontend/Campbelltech.TaxCalculator/Campbelltech.TaxCalculator.UI/Campbelltech.TaxCalculator.UI.csproj",
   "expectedPackageFiles": [
     "/home/sean/.nuget/packages/campbelltech.postalcodetax.dto/1.0.0/campbelltech.postalcodetax.dto.1.0.0.nupkg.sha512",
+    "/home/sean/.nuget/packages/campbelltech.taxcalculation.dto/1.0.0/campbelltech.taxcalculation.dto.1.0.0.nupkg.sha512",
     "/home/sean/.nuget/packages/newtonsoft.json/12.0.3/newtonsoft.json.12.0.3.nupkg.sha512",
     "/home/sean/.nuget/packages/system.net.http.formatting.extension/5.2.3/system.net.http.formatting.extension.5.2.3.nupkg.sha512"
   ],

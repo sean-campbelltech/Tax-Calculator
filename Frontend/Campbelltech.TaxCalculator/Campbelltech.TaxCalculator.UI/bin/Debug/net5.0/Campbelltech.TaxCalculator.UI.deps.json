@@ -26,6 +26,7 @@
       "Campbelltech.TaxCalculator.UI/1.0.0": {
         "dependencies": {
           "Campbelltech.PostalCodeTax.DTO": "1.0.0",
+          "Campbelltech.TaxCalculation.DTO": "1.0.0",
           "Newtonsoft.Json": "12.0.3",
           "System.Net.Http.Formatting.Extension": "5.2.3",
           "Microsoft.AspNetCore.Antiforgery": "5.0.0.0",
@@ -328,6 +329,17 @@
         },
         "compile": {
           "lib/net5.0/Campbelltech.PostalCodeTax.DTO.dll": {}
+        }
+      },
+      "Campbelltech.TaxCalculation.DTO/1.0.0": {
+        "runtime": {
+          "lib/net5.0/Campbelltech.TaxCalculation.DTO.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        },
+        "compile": {
+          "lib/net5.0/Campbelltech.TaxCalculation.DTO.dll": {}
         }
       },
       "Newtonsoft.Json/12.0.3": {
@@ -2074,6 +2086,13 @@
       "sha512": "sha512-Z4uCt0k1MV+4BYHJfP1HhDyxLVKWTJPgUejQvbIMno0NDDyaZaqQy8zp9xshUsJPeQXxXEo75D1Y8xg7GE02aQ==",
       "path": "campbelltech.postalcodetax.dto/1.0.0",
       "hashPath": "campbelltech.postalcodetax.dto.1.0.0.nupkg.sha512"
+    },
+    "Campbelltech.TaxCalculation.DTO/1.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-TEbLOpg09LI63ZdVE6IWVijopybTia5e4KVTEbXhVME3lkjnrjjaUEqrUQBr9rS7SZTKcXiI3Hwxlf+h4JvdvA==",
+      "path": "campbelltech.taxcalculation.dto/1.0.0",
+      "hashPath": "campbelltech.taxcalculation.dto.1.0.0.nupkg.sha512"
     },
     "Newtonsoft.Json/12.0.3": {
       "type": "package",

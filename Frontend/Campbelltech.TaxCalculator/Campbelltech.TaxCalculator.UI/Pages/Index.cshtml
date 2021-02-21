@@ -10,8 +10,12 @@
     <div class="form-group">
         <label for="PostalCode" class="control-label col-sm-3">Postal Code</label>
         <div class="col-sm-8">
-            <select name="PostalCode" class="form-control">
-                <option value="">Select</option>
+            <select name="PostalCode" class="form-control" asp-for="PostalCode">
+                <option value="0">Please Select Postal Code</option>
+                @foreach (var item in Model.PostalCodeTaxes)
+                {
+                    <option value="@item.PostalCode">@item.PostalCode</option>
+                }
             </select>
         </div>
     </div>
@@ -23,5 +27,10 @@
 
     <div class="col-sm-offset-2 col-sm-8">
         <input type="submit" value="Calculate Tax" class="btn btn-default" />
+    </div>
+
+    <label for="TaxAmount" class="control-label col-sm-3">Tax Amount</label>
+    <div class="col-sm-8">
+        <input type="text" asp-for="TaxAmount" class="form-control" />
     </div>
 </form>
