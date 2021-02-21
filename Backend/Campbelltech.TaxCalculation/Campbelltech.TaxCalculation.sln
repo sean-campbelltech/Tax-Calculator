@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Campbelltech.TaxCalculation
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Campbelltech.TaxCalculation.DTO", "Campbelltech.TaxCalculation.DTO\Campbelltech.TaxCalculation.DTO.csproj", "{D3E9DDCB-79AB-41E7-A715-A5761E7AEA5A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Campbelltech.TaxCalculation.Test", "Campbelltech.TaxCalculation.Test\Campbelltech.TaxCalculation.Test.csproj", "{C2F69625-1FA8-493D-BC65-29FE4164C38A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -58,5 +60,17 @@ Global
 		{D3E9DDCB-79AB-41E7-A715-A5761E7AEA5A}.Release|x64.Build.0 = Release|Any CPU
 		{D3E9DDCB-79AB-41E7-A715-A5761E7AEA5A}.Release|x86.ActiveCfg = Release|Any CPU
 		{D3E9DDCB-79AB-41E7-A715-A5761E7AEA5A}.Release|x86.Build.0 = Release|Any CPU
+		{C2F69625-1FA8-493D-BC65-29FE4164C38A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2F69625-1FA8-493D-BC65-29FE4164C38A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2F69625-1FA8-493D-BC65-29FE4164C38A}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{C2F69625-1FA8-493D-BC65-29FE4164C38A}.Debug|x64.Build.0 = Debug|Any CPU
+		{C2F69625-1FA8-493D-BC65-29FE4164C38A}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{C2F69625-1FA8-493D-BC65-29FE4164C38A}.Debug|x86.Build.0 = Debug|Any CPU
+		{C2F69625-1FA8-493D-BC65-29FE4164C38A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2F69625-1FA8-493D-BC65-29FE4164C38A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C2F69625-1FA8-493D-BC65-29FE4164C38A}.Release|x64.ActiveCfg = Release|Any CPU
+		{C2F69625-1FA8-493D-BC65-29FE4164C38A}.Release|x64.Build.0 = Release|Any CPU
+		{C2F69625-1FA8-493D-BC65-29FE4164C38A}.Release|x86.ActiveCfg = Release|Any CPU
+		{C2F69625-1FA8-493D-BC65-29FE4164C38A}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
