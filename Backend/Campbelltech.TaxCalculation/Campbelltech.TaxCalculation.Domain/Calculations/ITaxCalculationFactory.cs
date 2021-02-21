@@ -4,7 +4,7 @@ namespace Campbelltech.TaxCalculation.Domain.Calculations
 {
     public interface ITaxCalculationFactory
     {
-        // <summary>
+        /// <summary>
         /// Factory method for retrieving the correct ITaxCalculation implementation using DI to register 
         /// a Func which returns the correct ITaxCalculation implementation depending on the tax type.
         /// </summary>

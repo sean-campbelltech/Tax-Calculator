@@ -31,7 +31,7 @@ namespace Campbelltech.TaxCalculation.Domain.Services
         }
 
         /// <summary>
-        /// Main method that facilitates the tax calculation request.
+        /// Main service method that facilitates the tax calculation request.
         /// </summary>
         /// <param name="request">TaxCalculationRequest object</param>
         /// <param name="requestBy">Username of person that requested the tax calculation</param>
