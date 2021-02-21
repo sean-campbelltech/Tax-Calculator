@@ -1,0 +1,15 @@
+/home/sean/Source/Tax-Calculator/Backend/Campbelltech.PostalCodeTax/Campbelltech.PostalCodeTax.Domain/bin/Debug/net5.0/Campbelltech.PostalCodeTax.Domain.deps.json
+/home/sean/Source/Tax-Calculator/Backend/Campbelltech.PostalCodeTax/Campbelltech.PostalCodeTax.Domain/bin/Debug/net5.0/Campbelltech.PostalCodeTax.Domain.dll
+/home/sean/Source/Tax-Calculator/Backend/Campbelltech.PostalCodeTax/Campbelltech.PostalCodeTax.Domain/bin/Debug/net5.0/ref/Campbelltech.PostalCodeTax.Domain.dll
+/home/sean/Source/Tax-Calculator/Backend/Campbelltech.PostalCodeTax/Campbelltech.PostalCodeTax.Domain/bin/Debug/net5.0/Campbelltech.PostalCodeTax.Domain.pdb
+/home/sean/Source/Tax-Calculator/Backend/Campbelltech.PostalCodeTax/Campbelltech.PostalCodeTax.Domain/bin/Debug/net5.0/Campbelltech.PostalCodeTax.DTO.dll
+/home/sean/Source/Tax-Calculator/Backend/Campbelltech.PostalCodeTax/Campbelltech.PostalCodeTax.Domain/bin/Debug/net5.0/Campbelltech.PostalCodeTax.DTO.pdb
+/home/sean/Source/Tax-Calculator/Backend/Campbelltech.PostalCodeTax/Campbelltech.PostalCodeTax.Domain/obj/Debug/net5.0/Campbelltech.PostalCodeTax.Domain.csprojAssemblyReference.cache
+/home/sean/Source/Tax-Calculator/Backend/Campbelltech.PostalCodeTax/Campbelltech.PostalCodeTax.Domain/obj/Debug/net5.0/Campbelltech.PostalCodeTax.Domain.GeneratedMSBuildEditorConfig.editorconfig
+/home/sean/Source/Tax-Calculator/Backend/Campbelltech.PostalCodeTax/Campbelltech.PostalCodeTax.Domain/obj/Debug/net5.0/Campbelltech.PostalCodeTax.Domain.AssemblyInfoInputs.cache
+/home/sean/Source/Tax-Calculator/Backend/Campbelltech.PostalCodeTax/Campbelltech.PostalCodeTax.Domain/obj/Debug/net5.0/Campbelltech.PostalCodeTax.Domain.AssemblyInfo.cs
+/home/sean/Source/Tax-Calculator/Backend/Campbelltech.PostalCodeTax/Campbelltech.PostalCodeTax.Domain/obj/Debug/net5.0/Campbelltech.PostalCodeTax.Domain.csproj.CoreCompileInputs.cache
+/home/sean/Source/Tax-Calculator/Backend/Campbelltech.PostalCodeTax/Campbelltech.PostalCodeTax.Domain/obj/Debug/net5.0/Campbelltech.PostalCodeTax.Domain.csproj.CopyComplete
+/home/sean/Source/Tax-Calculator/Backend/Campbelltech.PostalCodeTax/Campbelltech.PostalCodeTax.Domain/obj/Debug/net5.0/Campbelltech.PostalCodeTax.Domain.dll
+/home/sean/Source/Tax-Calculator/Backend/Campbelltech.PostalCodeTax/Campbelltech.PostalCodeTax.Domain/obj/Debug/net5.0/ref/Campbelltech.PostalCodeTax.Domain.dll
+/home/sean/Source/Tax-Calculator/Backend/Campbelltech.PostalCodeTax/Campbelltech.PostalCodeTax.Domain/obj/Debug/net5.0/Campbelltech.PostalCodeTax.Domain.pdb
