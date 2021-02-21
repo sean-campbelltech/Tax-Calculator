@@ -56,6 +56,19 @@ END
 
 IF NOT EXISTS (SELECT *
 FROM sysobjects
+WHERE name='ProgressiveTaxRate' AND xtype='U')
+BEGIN
+	CREATE TABLE ProgressiveTaxRate
+	(
+		Rate DECIMAL(10,2) NOT NULL PRIMARY KEY,
+		FromAmount DECIMAL(10,2) NOT NULL,
+		ToAmount DECIMAL(10,2) NOT NULL
+	);
+END
+GO
+
+IF NOT EXISTS (SELECT *
+FROM sysobjects
 WHERE name='TaxCalculation' AND xtype='U')
 BEGIN
 	CREATE TABLE TaxCalculation
@@ -74,17 +87,144 @@ BEGIN
 	);
 END
 
+/* Insert data */
+SET IDENTITY_INSERT TaxType ON
+
 IF NOT EXISTS (SELECT *
-FROM sysobjects
-WHERE name='ProgressiveTaxRate' AND xtype='U')
+FROM TaxType
+WHERE TaxTypeId = 1)
 BEGIN
-	CREATE TABLE ProgressiveTaxRate
-	(
-		Rate DECIMAL(10,2) NOT NULL PRIMARY KEY,
-		FromAmount DECIMAL(10,2) NOT NULL,
-		ToAmount DECIMAL(10,2) NOT NULL
-	);
+	INSERT INTO TaxType
+		(TaxTypeId, Description)
+	VALUES
+		(1, 'Progressive')
+END
+
+IF NOT EXISTS (SELECT *
+FROM TaxType
+WHERE TaxTypeId = 2)
+BEGIN
+	INSERT INTO TaxType
+		(TaxTypeId, Description)
+	VALUES
+		(2, 'Flat Value')
 END
 GO
 
-/* Insert data */
+IF NOT EXISTS (SELECT *
+FROM TaxType
+WHERE TaxTypeId = 3)
+BEGIN
+	INSERT INTO TaxType
+		(TaxTypeId, Description)
+	VALUES
+		(3, 'Flat Rate')
+END
+GO
+
+SET IDENTITY_INSERT TaxType OFF
+
+IF NOT EXISTS (SELECT *
+FROM PostalCodeTax
+WHERE PostalCode = '7441')
+BEGIN
+	INSERT INTO PostalCodeTax
+		(PostalCode, TaxTypeId)
+	VALUES
+		('7441', 1)
+END
+
+IF NOT EXISTS (SELECT *
+FROM PostalCodeTax
+WHERE PostalCode = 'A100')
+BEGIN
+	INSERT INTO PostalCodeTax
+		(PostalCode, TaxTypeId)
+	VALUES
+		('A100', 2)
+END
+GO
+
+IF NOT EXISTS (SELECT *
+FROM PostalCodeTax
+WHERE PostalCode = '7000')
+BEGIN
+	INSERT INTO PostalCodeTax
+		(PostalCode, TaxTypeId)
+	VALUES
+		('7000', 3)
+END
+GO
+
+IF NOT EXISTS (SELECT *
+FROM PostalCodeTax
+WHERE PostalCode = '1000')
+BEGIN
+	INSERT INTO PostalCodeTax
+		(PostalCode, TaxTypeId)
+	VALUES
+		('1000', 1)
+END
+
+IF NOT EXISTS (SELECT *
+FROM ProgressiveTaxRate
+WHERE Rate = 10)
+BEGIN
+	INSERT INTO ProgressiveTaxRate
+		(Rate, FromAmount, ToAmount)
+	VALUES
+		(10, 0, 8350)
+END
+
+IF NOT EXISTS (SELECT *
+FROM ProgressiveTaxRate
+WHERE Rate = 15)
+BEGIN
+	INSERT INTO ProgressiveTaxRate
+		(Rate, FromAmount, ToAmount)
+	VALUES
+		(15, 8351, 33950)
+END
+
+IF NOT EXISTS (SELECT *
+FROM ProgressiveTaxRate
+WHERE Rate = 25)
+BEGIN
+	INSERT INTO ProgressiveTaxRate
+		(Rate, FromAmount, ToAmount)
+	VALUES
+		(25, 33951, 82250)
+END
+
+IF NOT EXISTS (SELECT *
+FROM ProgressiveTaxRate
+WHERE Rate = 28)
+BEGIN
+	INSERT INTO ProgressiveTaxRate
+		(Rate, FromAmount, ToAmount)
+	VALUES
+		(28, 82251, 171550)
+END
+
+IF NOT EXISTS (SELECT *
+FROM ProgressiveTaxRate
+WHERE Rate = 33)
+BEGIN
+	INSERT INTO ProgressiveTaxRate
+		(Rate, FromAmount, ToAmount)
+	VALUES
+		(33, 171551, 372950)
+END
+
+DECLARE @decimalMax DECIMAL(10,2)
+SET @decimalMax = 99999999.99;
+
+IF NOT EXISTS (SELECT *
+FROM ProgressiveTaxRate
+WHERE Rate = 35)
+BEGIN
+	INSERT INTO ProgressiveTaxRate
+		(Rate, FromAmount, ToAmount)
+	VALUES
+		(35, 372951, @decimalMax)
+END
