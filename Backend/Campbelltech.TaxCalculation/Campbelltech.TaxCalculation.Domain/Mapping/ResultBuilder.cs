@@ -30,7 +30,7 @@ namespace Campbelltech.TaxCalculation.Domain.Mapping
         /// <returns>TaxCalculationModelBuilder</returns>
         internal ResultBuilder AddTaxAmount(decimal taxAmount)
         {
-            _response.TaxAmount = taxAmount;
+            _response.TaxAmount = Math.Round(taxAmount, 2);
 
             return this;
         }
