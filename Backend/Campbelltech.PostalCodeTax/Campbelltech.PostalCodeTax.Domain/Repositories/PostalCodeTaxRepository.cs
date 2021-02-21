@@ -1,11 +1,11 @@
 using System;
-using System.Collections.Generic;
 using System.Threading.Tasks;
-using Campbelltech.PostalCodeTax.Domain.Configuration;
-using Campbelltech.PostalCodeTax.Domain.Data_Models;
-using Microsoft.EntityFrameworkCore;
+using System.Collections.Generic;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
+using Microsoft.EntityFrameworkCore;
+using Campbelltech.PostalCodeTax.Domain.Data_Models;
+using Campbelltech.PostalCodeTax.Domain.Configuration;
 
 namespace Campbelltech.PostalCodeTax.Domain.Repositories
 {
@@ -35,7 +35,6 @@ namespace Campbelltech.PostalCodeTax.Domain.Repositories
                     var postalCodeTaxes = await context.PostalCodeTaxes.AsNoTracking()
                                                 .Include(i => i.TaxType)
                                                ?.ToListAsync();
-
 
                     return postalCodeTaxes;
                 }

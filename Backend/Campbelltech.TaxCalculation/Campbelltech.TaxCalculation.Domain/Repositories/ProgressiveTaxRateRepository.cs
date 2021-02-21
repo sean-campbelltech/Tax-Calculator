@@ -1,12 +1,12 @@
 using System;
 using System.Linq;
-using System.Collections.Generic;
 using System.Threading.Tasks;
-using Campbelltech.TaxCalculation.Domain.Configuration;
-using Campbelltech.TaxCalculation.Domain.Data_Models;
-using Microsoft.EntityFrameworkCore;
+using System.Collections.Generic;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
+using Microsoft.EntityFrameworkCore;
+using Campbelltech.TaxCalculation.Domain.Data_Models;
+using Campbelltech.TaxCalculation.Domain.Configuration;
 
 namespace Campbelltech.TaxCalculation.Domain.Repositories
 {

@@ -1,22 +1,16 @@
 using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Linq;
 using System.Reflection;
-using System.Threading.Tasks;
-using Campbelltech.TaxCalculation.Domain.Calculations;
-using Campbelltech.TaxCalculation.Domain.Configuration;
-using Campbelltech.TaxCalculation.Domain.Repositories;
-using Campbelltech.TaxCalculation.Domain.Services;
+using Microsoft.OpenApi.Models;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
-using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
-using Microsoft.OpenApi.Models;
+using Campbelltech.TaxCalculation.Domain.Services;
+using Campbelltech.TaxCalculation.Domain.Calculations;
+using Campbelltech.TaxCalculation.Domain.Repositories;
+using Campbelltech.TaxCalculation.Domain.Configuration;
 
 namespace Campbelltech.TaxCalculation.Api
 {
