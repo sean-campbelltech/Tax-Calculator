@@ -42,7 +42,7 @@ namespace Campbelltech.TaxCalculation.Api.Controllers
             try
             {
                 // retrieve the username from the JWT claims
-                var requestedByUser = HttpContext.User?.Identity?.Name;
+                var requestedByUser = HttpContext?.User?.Identity?.Name;
 
                 // execute main tax calculation logic
                 var (statusCode, response) = await _taxCalculationService.CalculateAsync(request, requestedByUser);
