@@ -29,7 +29,7 @@ namespace Campbelltech.TaxCalculator.UI.Clients
         {
             try
             {
-                var endpointUri = new Uri($"http://localhost:5101/api/v1/calculateTax");
+                var endpointUri = new Uri($"{_apiGatewayUri}api/v1/listPostalCodeTaxes");
                 var request = new TaxCalculationRequest
                 {
                     PostalCode = postalCode,
