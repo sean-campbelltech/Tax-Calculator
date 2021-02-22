@@ -11,6 +11,8 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
+using Ocelot.DependencyInjection;
+using Ocelot.Middleware;
 
 namespace Campbelltech.ApiGateway.Api
 {
@@ -32,17 +34,21 @@ namespace Campbelltech.ApiGateway.Api
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "Campbelltech.ApiGateway.Api", Version = "v1" });
             });
+
+            services.AddOcelot(Configuration);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+        public async void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
                 app.UseSwagger();
-                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "Campbelltech.ApiGateway.Api v1"));
+                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "CoffeeMarket.Gateway.Api v1"));
             }
+
+            await app.UseOcelot();
 
             app.UseHttpsRedirection();
 

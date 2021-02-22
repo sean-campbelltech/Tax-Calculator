@@ -5,8 +5,6 @@ VisualStudioVersion = 15.0.26124.0
 MinimumVisualStudioVersion = 15.0.26124.0
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Campbelltech.ApiGateway.Api", "Campbelltech.ApiGateway.Api\Campbelltech.ApiGateway.Api.csproj", "{BF7E3F2B-80F0-49CD-A13D-328A7F124C0B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Campbelltech.ApiGateway.Test", "Campbelltech.ApiGateway.Test\Campbelltech.ApiGateway.Test.csproj", "{875AF4B5-B3EB-40F5-8F17-F978A28C373D}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

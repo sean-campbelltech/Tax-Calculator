@@ -27,3 +27,12 @@
 /home/sean/Source/Tax-Calculator/Backend/Campbelltech.ApiGateway/Campbelltech.ApiGateway.Api/obj/Debug/net5.0/ref/Campbelltech.ApiGateway.Api.dll
 /home/sean/Source/Tax-Calculator/Backend/Campbelltech.ApiGateway/Campbelltech.ApiGateway.Api/obj/Debug/net5.0/Campbelltech.ApiGateway.Api.pdb
 /home/sean/Source/Tax-Calculator/Backend/Campbelltech.ApiGateway/Campbelltech.ApiGateway.Api/obj/Debug/net5.0/Campbelltech.ApiGateway.Api.genruntimeconfig.cache
+/home/sean/Source/Tax-Calculator/Backend/Campbelltech.ApiGateway/Campbelltech.ApiGateway.Api/bin/Debug/net5.0/FluentValidation.dll
+/home/sean/Source/Tax-Calculator/Backend/Campbelltech.ApiGateway/Campbelltech.ApiGateway.Api/bin/Debug/net5.0/Microsoft.AspNetCore.JsonPatch.dll
+/home/sean/Source/Tax-Calculator/Backend/Campbelltech.ApiGateway/Campbelltech.ApiGateway.Api/bin/Debug/net5.0/Microsoft.AspNetCore.MiddlewareAnalysis.dll
+/home/sean/Source/Tax-Calculator/Backend/Campbelltech.ApiGateway/Campbelltech.ApiGateway.Api/bin/Debug/net5.0/Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+/home/sean/Source/Tax-Calculator/Backend/Campbelltech.ApiGateway/Campbelltech.ApiGateway.Api/bin/Debug/net5.0/Microsoft.Extensions.DiagnosticAdapter.dll
+/home/sean/Source/Tax-Calculator/Backend/Campbelltech.ApiGateway/Campbelltech.ApiGateway.Api/bin/Debug/net5.0/Newtonsoft.Json.dll
+/home/sean/Source/Tax-Calculator/Backend/Campbelltech.ApiGateway/Campbelltech.ApiGateway.Api/bin/Debug/net5.0/Newtonsoft.Json.Bson.dll
+/home/sean/Source/Tax-Calculator/Backend/Campbelltech.ApiGateway/Campbelltech.ApiGateway.Api/bin/Debug/net5.0/Ocelot.dll
+/home/sean/Source/Tax-Calculator/Backend/Campbelltech.ApiGateway/Campbelltech.ApiGateway.Api/bin/Debug/net5.0/gatewayroutes.json
