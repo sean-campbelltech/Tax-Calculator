@@ -2,6 +2,18 @@
   "version": 3,
   "targets": {
     "net5.0": {
+      "AspNetCore.Http.Extensions/1.0.1": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "10.0.3"
+        },
+        "compile": {
+          "lib/netstandard2.0/AspNetCore.Http.Extensions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/AspNetCore.Http.Extensions.dll": {}
+        }
+      },
       "Campbelltech.PostalCodeTax.DTO/1.0.0": {
         "type": "package",
         "compile": {
@@ -28,23 +40,24 @@
         "runtime": {
           "lib/netstandard2.0/Newtonsoft.Json.dll": {}
         }
-      },
-      "System.Net.Http.Formatting.Extension/5.2.3": {
-        "type": "package",
-        "compile": {
-          "lib/System.Net.Http.Extensions.dll": {},
-          "lib/System.Net.Http.Formatting.dll": {},
-          "lib/System.Net.Http.Primitives.dll": {}
-        },
-        "runtime": {
-          "lib/System.Net.Http.Extensions.dll": {},
-          "lib/System.Net.Http.Formatting.dll": {},
-          "lib/System.Net.Http.Primitives.dll": {}
-        }
       }
     }
   },
   "libraries": {
+    "AspNetCore.Http.Extensions/1.0.1": {
+      "sha512": "FZyUSh3r9DpEFu+qognOZYgOtMK/PC5X1oqoShqK9KIaIJ9kbqgyFEs54zWAKHj52s+FignNpTc2K9pFxUADIw==",
+      "type": "package",
+      "path": "aspnetcore.http.extensions/1.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "aspnetcore.http.extensions.1.0.1.nupkg.sha512",
+        "aspnetcore.http.extensions.nuspec",
+        "lib/netstandard1.1/AspNetCore.Http.Extensions.dll",
+        "lib/netstandard1.5/AspNetCore.Http.Extensions.dll",
+        "lib/netstandard2.0/AspNetCore.Http.Extensions.dll"
+      ]
+    },
     "Campbelltech.PostalCodeTax.DTO/1.0.0": {
       "sha512": "Z4uCt0k1MV+4BYHJfP1HhDyxLVKWTJPgUejQvbIMno0NDDyaZaqQy8zp9xshUsJPeQXxXEo75D1Y8xg7GE02aQ==",
       "type": "package",
@@ -99,28 +112,14 @@
         "newtonsoft.json.nuspec",
         "packageIcon.png"
       ]
-    },
-    "System.Net.Http.Formatting.Extension/5.2.3": {
-      "sha512": "BlYwj3Mbgc2i+NqtBZ+bea3LiN9WuGpE8PCylBvhxV0wBs0XTkXJmDuzkNnUyPhDBqKMBwDK0ZCnwJ8LpQ0aEg==",
-      "type": "package",
-      "path": "system.net.http.formatting.extension/5.2.3",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/System.Net.Http.Extensions.dll",
-        "lib/System.Net.Http.Formatting.dll",
-        "lib/System.Net.Http.Primitives.dll",
-        "system.net.http.formatting.extension.5.2.3.nupkg.sha512",
-        "system.net.http.formatting.extension.nuspec"
-      ]
     }
   },
   "projectFileDependencyGroups": {
     "net5.0": [
+      "AspNetCore.Http.Extensions >= 1.0.1",
       "Campbelltech.PostalCodeTax.DTO >= 1.0.0",
       "Campbelltech.TaxCalculation.DTO >= 1.0.0",
-      "Newtonsoft.Json >= 12.0.3",
-      "System.Net.Http.Formatting.Extension >= 5.2.3"
+      "Newtonsoft.Json >= 12.0.3"
     ]
   },
   "packageFolders": {
@@ -160,6 +159,10 @@
       "net5.0": {
         "targetAlias": "net5.0",
         "dependencies": {
+          "AspNetCore.Http.Extensions": {
+            "target": "Package",
+            "version": "[1.0.1, )"
+          },
           "Campbelltech.PostalCodeTax.DTO": {
             "target": "Package",
             "version": "[1.0.0, )"
@@ -171,10 +174,6 @@
           "Newtonsoft.Json": {
             "target": "Package",
             "version": "[12.0.3, )"
-          },
-          "System.Net.Http.Formatting.Extension": {
-            "target": "Package",
-            "version": "[5.2.3, )"
           }
         },
         "imports": [
@@ -198,17 +197,5 @@
         "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/5.0.103/RuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'System.Net.Http.Formatting.Extension 5.2.3' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework 'net5.0'. This package may not be fully compatible with your project.",
-      "libraryId": "System.Net.Http.Formatting.Extension",
-      "targetGraphs": [
-        "net5.0"
-      ]
-    }
-  ]
+  }
 }

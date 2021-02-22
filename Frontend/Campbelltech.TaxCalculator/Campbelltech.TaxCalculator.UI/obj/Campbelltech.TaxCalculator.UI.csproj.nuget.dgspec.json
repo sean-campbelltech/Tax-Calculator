@@ -38,6 +38,10 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
+            "AspNetCore.Http.Extensions": {
+              "target": "Package",
+              "version": "[1.0.1, )"
+            },
             "Campbelltech.PostalCodeTax.DTO": {
               "target": "Package",
               "version": "[1.0.0, )"
@@ -49,10 +53,6 @@
             "Newtonsoft.Json": {
               "target": "Package",
               "version": "[12.0.3, )"
-            },
-            "System.Net.Http.Formatting.Extension": {
-              "target": "Package",
-              "version": "[5.2.3, )"
             }
           },
           "imports": [

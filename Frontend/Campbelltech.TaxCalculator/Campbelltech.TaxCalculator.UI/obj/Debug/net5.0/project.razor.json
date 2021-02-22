@@ -15628,11 +15628,6 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/home/sean/Source/Tax-Calculator/Frontend/Campbelltech.TaxCalculator/Campbelltech.TaxCalculator.UI/Pages/Privacy.cshtml",
-      "TargetPath": "Pages\\Privacy.cshtml",
-      "FileKind": "mvc"
-    },
-    {
       "FilePath": "/home/sean/Source/Tax-Calculator/Frontend/Campbelltech.TaxCalculator/Campbelltech.TaxCalculator.UI/Pages/Error.cshtml",
       "TargetPath": "Pages\\Error.cshtml",
       "FileKind": "mvc"

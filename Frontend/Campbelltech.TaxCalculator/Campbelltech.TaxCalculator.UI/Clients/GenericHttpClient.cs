@@ -1,6 +1,7 @@
 using System;
 using System.Net;
 using System.Net.Http;
+using System.Net.Http.Json;
 using System.Threading.Tasks;
 
 namespace Campbelltech.TaxCalculator.UI.Clients
@@ -30,7 +31,7 @@ namespace Campbelltech.TaxCalculator.UI.Clients
 
             if (response.StatusCode == HttpStatusCode.NotFound) return null;
 
-            return response.Content.ReadAsAsync<T>().Result as T;
+            return response.Content.ReadFromJsonAsync<T>().Result as T;
         }
 
         /// <summary>
@@ -45,7 +46,7 @@ namespace Campbelltech.TaxCalculator.UI.Clients
 
             if (response.StatusCode == HttpStatusCode.NotFound) return null;
 
-            return response.Content.ReadAsAsync<T>().Result as T;
+            return response.Content.ReadFromJsonAsync<T>().Result as T;
         }
 
         /// <summary>

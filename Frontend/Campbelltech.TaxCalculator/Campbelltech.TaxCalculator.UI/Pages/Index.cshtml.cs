@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Net.Http;
 using System.Threading.Tasks;
@@ -36,38 +37,41 @@ namespace Campbelltech.TaxCalculator.UI.Pages
         public decimal AnnualIncome { get; set; }
 
         [BindProperty]
-        public List<SelectListItem> PostalCodesList { get; set; }
+        public List<string> PostalCodesList { get; set; }
 
         [BindProperty]
-        public List<PostalCodeTax.DTO.Postal_Code_Taxes.PostalCodeTax> PostalCodeTaxes { get; set; }
-
-        [BindProperty]
+        [DisplayFormat(DataFormatString = "{0:C}", ApplyFormatInEditMode = true)]
         public decimal TaxAmount { get; set; }
 
-        public async Task OnGet()
+        public async Task<IActionResult> OnGet(decimal annualIncome = 0m, decimal taxAmount = 0m)
         {
             try
             {
+                this.TaxAmount = taxAmount;
+                this.AnnualIncome = annualIncome;
+
                 var response = await _postalCodeTaxClient.GetAsync();
-                PostalCodeTaxes = response?.PostalCodeTaxes;
+                PostalCodesList = response?.PostalCodeTaxes?.Select(s => s.PostalCode)?.ToList();
+
+                return Page();
             }
             catch (Exception ex)
             {
-                RedirectToPage("Error", new { msg = ex.Message });
+                return RedirectToAction("Error", new { msg = ex.Message });
             }
         }
 
-        public async Task OnPost()
+        public async Task<IActionResult> OnPost()
         {
             try
             {
                 var response = await _taxCalculationClient.CalculateAsync(PostalCode, AnnualIncome);
 
-                TaxAmount = response.TaxAmount;
+                return RedirectToAction("OnGet", "Index", new { annualIncome = AnnualIncome, taxAmount = response.TaxAmount });
             }
             catch (Exception ex)
             {
-                RedirectToPage("Error", new { msg = ex.Message });
+                return RedirectToAction("Error", new { msg = ex.Message });
             }
         }
     }

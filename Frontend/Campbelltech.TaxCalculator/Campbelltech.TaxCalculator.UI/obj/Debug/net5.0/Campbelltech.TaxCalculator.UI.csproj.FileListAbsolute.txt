@@ -12,9 +12,6 @@
 /home/sean/Source/Tax-Calculator/Frontend/Campbelltech.TaxCalculator/Campbelltech.TaxCalculator.UI/bin/Debug/net5.0/Campbelltech.PostalCodeTax.DTO.dll
 /home/sean/Source/Tax-Calculator/Frontend/Campbelltech.TaxCalculator/Campbelltech.TaxCalculator.UI/bin/Debug/net5.0/Campbelltech.TaxCalculation.DTO.dll
 /home/sean/Source/Tax-Calculator/Frontend/Campbelltech.TaxCalculator/Campbelltech.TaxCalculator.UI/bin/Debug/net5.0/Newtonsoft.Json.dll
-/home/sean/Source/Tax-Calculator/Frontend/Campbelltech.TaxCalculator/Campbelltech.TaxCalculator.UI/bin/Debug/net5.0/System.Net.Http.Extensions.dll
-/home/sean/Source/Tax-Calculator/Frontend/Campbelltech.TaxCalculator/Campbelltech.TaxCalculator.UI/bin/Debug/net5.0/System.Net.Http.Formatting.dll
-/home/sean/Source/Tax-Calculator/Frontend/Campbelltech.TaxCalculator/Campbelltech.TaxCalculator.UI/bin/Debug/net5.0/System.Net.Http.Primitives.dll
 /home/sean/Source/Tax-Calculator/Frontend/Campbelltech.TaxCalculator/Campbelltech.TaxCalculator.UI/obj/Debug/net5.0/Campbelltech.TaxCalculator.UI.csprojAssemblyReference.cache
 /home/sean/Source/Tax-Calculator/Frontend/Campbelltech.TaxCalculator/Campbelltech.TaxCalculator.UI/obj/Debug/net5.0/Campbelltech.TaxCalculator.UI.GeneratedMSBuildEditorConfig.editorconfig
 /home/sean/Source/Tax-Calculator/Frontend/Campbelltech.TaxCalculator/Campbelltech.TaxCalculator.UI/obj/Debug/net5.0/Campbelltech.TaxCalculator.UI.AssemblyInfoInputs.cache
@@ -31,7 +28,6 @@
 /home/sean/Source/Tax-Calculator/Frontend/Campbelltech.TaxCalculator/Campbelltech.TaxCalculator.UI/obj/Debug/net5.0/Campbelltech.TaxCalculator.UI.RazorCoreGenerate.cache
 /home/sean/Source/Tax-Calculator/Frontend/Campbelltech.TaxCalculator/Campbelltech.TaxCalculator.UI/obj/Debug/net5.0/Razor/Pages/Error.cshtml.g.cs
 /home/sean/Source/Tax-Calculator/Frontend/Campbelltech.TaxCalculator/Campbelltech.TaxCalculator.UI/obj/Debug/net5.0/Razor/Pages/Index.cshtml.g.cs
-/home/sean/Source/Tax-Calculator/Frontend/Campbelltech.TaxCalculator/Campbelltech.TaxCalculator.UI/obj/Debug/net5.0/Razor/Pages/Privacy.cshtml.g.cs
 /home/sean/Source/Tax-Calculator/Frontend/Campbelltech.TaxCalculator/Campbelltech.TaxCalculator.UI/obj/Debug/net5.0/Razor/Pages/Shared/_Layout.cshtml.g.cs
 /home/sean/Source/Tax-Calculator/Frontend/Campbelltech.TaxCalculator/Campbelltech.TaxCalculator.UI/obj/Debug/net5.0/Razor/Pages/Shared/_ValidationScriptsPartial.cshtml.g.cs
 /home/sean/Source/Tax-Calculator/Frontend/Campbelltech.TaxCalculator/Campbelltech.TaxCalculator.UI/obj/Debug/net5.0/Razor/Pages/_ViewImports.cshtml.g.cs
@@ -44,3 +40,4 @@
 /home/sean/Source/Tax-Calculator/Frontend/Campbelltech.TaxCalculator/Campbelltech.TaxCalculator.UI/obj/Debug/net5.0/ref/Campbelltech.TaxCalculator.UI.dll
 /home/sean/Source/Tax-Calculator/Frontend/Campbelltech.TaxCalculator/Campbelltech.TaxCalculator.UI/obj/Debug/net5.0/Campbelltech.TaxCalculator.UI.pdb
 /home/sean/Source/Tax-Calculator/Frontend/Campbelltech.TaxCalculator/Campbelltech.TaxCalculator.UI/obj/Debug/net5.0/Campbelltech.TaxCalculator.UI.genruntimeconfig.cache
+/home/sean/Source/Tax-Calculator/Frontend/Campbelltech.TaxCalculator/Campbelltech.TaxCalculator.UI/bin/Debug/net5.0/AspNetCore.Http.Extensions.dll

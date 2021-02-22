@@ -1,24 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "m3Cemdb5gYzpPltiytejmjJQubreskDcMWa9Ppn9YZgjoPyjqRs0rFsn0fLe/UIC6dxsMAFaFePg1e05TO1Hmw==",
+  "dgSpecHash": "Bebfvi1hmlJbfSyer9lsSIp+7flGDfjTBrvSND3cmnaVPyrWEuISFQbgSNGAM4NT8wrqPfkvF4zeY00y29PURw==",
   "success": true,
   "projectFilePath": "/home/sean/Source/Tax-Calculator/Frontend/Campbelltech.TaxCalculator/Campbelltech.TaxCalculator.UI/Campbelltech.TaxCalculator.UI.csproj",
   "expectedPackageFiles": [
+    "/home/sean/.nuget/packages/aspnetcore.http.extensions/1.0.1/aspnetcore.http.extensions.1.0.1.nupkg.sha512",
     "/home/sean/.nuget/packages/campbelltech.postalcodetax.dto/1.0.0/campbelltech.postalcodetax.dto.1.0.0.nupkg.sha512",
     "/home/sean/.nuget/packages/campbelltech.taxcalculation.dto/1.0.0/campbelltech.taxcalculation.dto.1.0.0.nupkg.sha512",
-    "/home/sean/.nuget/packages/newtonsoft.json/12.0.3/newtonsoft.json.12.0.3.nupkg.sha512",
-    "/home/sean/.nuget/packages/system.net.http.formatting.extension/5.2.3/system.net.http.formatting.extension.5.2.3.nupkg.sha512"
+    "/home/sean/.nuget/packages/newtonsoft.json/12.0.3/newtonsoft.json.12.0.3.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'System.Net.Http.Formatting.Extension 5.2.3' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework 'net5.0'. This package may not be fully compatible with your project.",
-      "libraryId": "System.Net.Http.Formatting.Extension",
-      "targetGraphs": [
-        "net5.0"
-      ]
-    }
-  ]
+  "logs": []
 }
