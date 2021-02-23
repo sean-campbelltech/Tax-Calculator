@@ -1,0 +1,48 @@
+version: '3.4'
+
+services:
+
+  apigateway:    
+    container_name: api-gateway
+    image: campbelltechza/taxation:api-gateway
+    restart: unless-stopped
+    stop_grace_period: 2m
+    ports:
+      - 2000:80
+    environment: 
+      - ASPNETCORE_ENVIRONMENT=Production
+      
+  postalcodetaxapi:    
+    container_name: postalcodetax-api
+    image: campbelltechza/taxation:postalcodetax-api
+    restart: unless-stopped
+    stop_grace_period: 2m
+    ports:
+      - 5100:80
+    environment: 
+      - ASPNETCORE_ENVIRONMENT=Production
+      
+  taxcalculationapi:    
+    container_name: taxcalculation-api
+    image: campbelltechza/taxation:taxcalculation-api
+    restart: unless-stopped
+    stop_grace_period: 2m
+    ports:
+      - 5101:80
+    environment: 
+      - ASPNETCORE_ENVIRONMENT=Production
+      
+  taxcalculatorui:    
+    container_name: taxcalculator-ui
+    image: campbelltechza/taxation:taxcalculator-ui
+    restart: unless-stopped
+    stop_grace_period: 2m
+    ports:
+      - 2500:80
+    environment: 
+      - ASPNETCORE_ENVIRONMENT=Production
+      
+networks:
+  default:
+    external:
+      name: taxCalculatorNet
