@@ -40,15 +40,18 @@ namespace Campbelltech.TaxCalculator.UI.Pages
         public List<string> PostalCodesList { get; set; }
 
         [BindProperty]
-        [DisplayFormat(DataFormatString = "{0:C}", ApplyFormatInEditMode = true)]
         public decimal TaxAmount { get; set; }
 
-        public async Task<IActionResult> OnGet(decimal annualIncome = 0m, decimal taxAmount = 0m)
+        [BindProperty]
+        public string TaxCalculationTypeUsed { get; set; }
+
+        public async Task<IActionResult> OnGet(decimal annualIncome = 0m, decimal taxAmount = 0m, string taxCalculationTypeUsed = "")
         {
             try
             {
                 this.TaxAmount = taxAmount;
                 this.AnnualIncome = annualIncome;
+                this.TaxCalculationTypeUsed = taxCalculationTypeUsed;
 
                 var response = await _postalCodeTaxClient.GetAsync();
                 PostalCodesList = response?.PostalCodeTaxes?.Select(s => s.PostalCode)?.ToList();
@@ -67,7 +70,12 @@ namespace Campbelltech.TaxCalculator.UI.Pages
             {
                 var response = await _taxCalculationClient.CalculateAsync(PostalCode, AnnualIncome);
 
-                return RedirectToAction("OnGet", "Index", new { annualIncome = AnnualIncome, taxAmount = response.TaxAmount });
+                return RedirectToAction("OnGet", "Index", new
+                {
+                    annualIncome = AnnualIncome,
+                    taxAmount = response.TaxAmount,
+                    TaxCalculationTypeUsed = response.CalculationTypeUsed
+                });
             }
             catch (Exception ex)
             {
