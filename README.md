@@ -4,7 +4,7 @@ A Tax Calculator that is based on ASP.NET Core MVC (Front-End) and ASP.NET Core 
 
 ## Context Diagram
 
-![alt text](https://raw.githubusercontent.com/sean-campbelltech/Tax-Calculator/main/Diagrams/Tax-Calculator%20Context%20Diagram-Smaller.png "Context Diagram")
+![alt text](https://raw.githubusercontent.com/sean-campbelltech/Tax-Calculator/main/Diagrams/Tax-Calculator%20Context%20Diagram.png "Context Diagram")
 
 ## Environment Setup
 
@@ -18,7 +18,7 @@ If you plan to run the Tax-Calculator solutions in Docker, you need to create an
 docker network create --attachable -d bridge taxCalculatorNet
 ```
 
-Then run the following command to list all you Docker networks
+Then run the following command to list all you Docker networks to see if the newly created taxCalculatorNet network has been created.
 
 ```
 docker network ls
@@ -47,15 +47,15 @@ Run following SQL scripts from your client tools (SSMS or Azure Data Studio or V
 
 ## Running the Applications
 
-**1. Running the Applications in Docker (Preferred):
+**1. Running the Applications in Docker (Preferred):**
 
 You can run all the applications by copying the [docker-compose.yml]() into a directory and executing the following command from that directory:
 
 ```
-docker-compose -d up
+docker-compose up -d
 ```
 
-**2. Running the Applications in VS Code:
+**2. Running the Applications in VS Code:**
 
 If you choose to run the applications from your local machine in VS Code, you will need to open and run all of the following workspaces/solutions:
 
