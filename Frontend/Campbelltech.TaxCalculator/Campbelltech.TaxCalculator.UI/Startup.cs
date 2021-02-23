@@ -47,7 +47,6 @@ namespace Campbelltech.TaxCalculator.UI
                 app.UseHsts();
             }
 
-            app.UseHttpsRedirection();
             app.UseStaticFiles();
 
             app.UseRouting();
