@@ -1,0 +1,36 @@
+{
+    "Routes": [
+        {
+            "DownstreamPathTemplate": "/api/{version}/ListPostalCodeTaxes",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "postalcodetax-api",
+                    "Port": 80
+                }
+            ],
+            "UpstreamPathTemplate": "/api/{version}/ListPostalCodeTaxes",
+            "UpstreamHttpMethod": [
+                "GET"
+            ]
+        },
+        {
+            "DownstreamPathTemplate": "/api/{version}/CalculateTax",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "taxcalculation-api",
+                    "Port": 80
+                }
+            ],
+            "UpstreamPathTemplate": "/api/{version}/CalculateTax",
+            "UpstreamHttpMethod": [
+                "POST"
+            ]
+        }
+    ],
+    "GlobalConfiguration": {
+        "RequestIdKey": "OcRequestId",
+        "AdministrationPath": "/administration"
+    }
+}

@@ -20,12 +20,11 @@ namespace Campbelltech.ApiGateway.Api
             Host.CreateDefaultBuilder(args)
             .ConfigureAppConfiguration((host, config) =>
             {
-                config.AddJsonFile("gatewayroutes.json");
+                config.AddJsonFile($"gatewayroutes.{host.HostingEnvironment.EnvironmentName}.json");
             })
-                .ConfigureWebHostDefaults(webBuilder =>
-                {
-                    webBuilder.UseUrls("http://localhost:2000");
-                    webBuilder.UseStartup<Startup>();
-                });
+            .ConfigureWebHostDefaults(webBuilder =>
+            {
+                webBuilder.UseStartup<Startup>();
+            });
     }
 }

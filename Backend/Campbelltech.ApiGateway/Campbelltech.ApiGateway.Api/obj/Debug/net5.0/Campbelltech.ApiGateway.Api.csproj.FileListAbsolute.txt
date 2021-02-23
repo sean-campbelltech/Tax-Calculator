@@ -35,4 +35,5 @@
 /home/sean/Source/Tax-Calculator/Backend/Campbelltech.ApiGateway/Campbelltech.ApiGateway.Api/bin/Debug/net5.0/Newtonsoft.Json.dll
 /home/sean/Source/Tax-Calculator/Backend/Campbelltech.ApiGateway/Campbelltech.ApiGateway.Api/bin/Debug/net5.0/Newtonsoft.Json.Bson.dll
 /home/sean/Source/Tax-Calculator/Backend/Campbelltech.ApiGateway/Campbelltech.ApiGateway.Api/bin/Debug/net5.0/Ocelot.dll
-/home/sean/Source/Tax-Calculator/Backend/Campbelltech.ApiGateway/Campbelltech.ApiGateway.Api/bin/Debug/net5.0/gatewayroutes.json
+/home/sean/Source/Tax-Calculator/Backend/Campbelltech.ApiGateway/Campbelltech.ApiGateway.Api/bin/Debug/net5.0/gatewayroutes.Production.json
+/home/sean/Source/Tax-Calculator/Backend/Campbelltech.ApiGateway/Campbelltech.ApiGateway.Api/bin/Debug/net5.0/gatewayroutes.Development.json

@@ -6,9 +6,9 @@
             "type": "coreclr",
             "request": "launch",
             "preLaunchTask": "build",
-            "program": "${workspaceFolder}/Campbelltech.PostalCodeTax.Api/bin/Debug/net5.0/Campbelltech.PostalCodeTax.Api.dll",
+            "program": "${workspaceFolder}/Campbelltech.TaxCalculation.Api/bin/Debug/net5.0/Campbelltech.TaxCalculation.Api.dll",
             "args": [],
-            "cwd": "${workspaceFolder}/Campbelltech.PostalCodeTax.Api",
+            "cwd": "${workspaceFolder}/Campbelltech.TaxCalculation.Api",
             "stopAtEntry": false,
             "serverReadyAction": {
                 "action": "openExternally",
@@ -33,7 +33,7 @@
             "request": "launch",
             "preLaunchTask": "docker-run: debug",
             "netCore": {
-                "appProject": "${workspaceFolder}/Campbelltech.PostalCodeTax.Api/Campbelltech.PostalCodeTax.Api.csproj"
+                "appProject": "${workspaceFolder}/Campbelltech.TaxCalculation.Api/Campbelltech.TaxCalculation.Api.csproj"
             }
         }
     ]

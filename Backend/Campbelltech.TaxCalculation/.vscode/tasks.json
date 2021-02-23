@@ -7,7 +7,7 @@
             "type": "process",
             "args": [
                 "build",
-                "${workspaceFolder}/Campbelltech.PostalCodeTax.Api/Campbelltech.PostalCodeTax.Api.csproj",
+                "${workspaceFolder}/Campbelltech.TaxCalculation.Api/Campbelltech.TaxCalculation.Api.csproj",
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary"
             ],
@@ -19,7 +19,7 @@
             "type": "process",
             "args": [
                 "publish",
-                "${workspaceFolder}/Campbelltech.PostalCodeTax.Api/Campbelltech.PostalCodeTax.Api.csproj",
+                "${workspaceFolder}/Campbelltech.TaxCalculation.Api/Campbelltech.TaxCalculation.Api.csproj",
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary"
             ],
@@ -32,7 +32,7 @@
             "args": [
                 "watch",
                 "run",
-                "${workspaceFolder}/Campbelltech.PostalCodeTax.Api/Campbelltech.PostalCodeTax.Api.csproj",
+                "${workspaceFolder}/Campbelltech.TaxCalculation.Api/Campbelltech.TaxCalculation.Api.csproj",
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary"
             ],
@@ -45,14 +45,14 @@
                 "build"
             ],
             "dockerBuild": {
-                "tag": "campbelltechpostalcodetax:dev",
+                "tag": "campbelltechtaxcalculation:dev",
                 "target": "base",
-                "dockerfile": "${workspaceFolder}/Campbelltech.PostalCodeTax.Api/Dockerfile",
+                "dockerfile": "${workspaceFolder}/Campbelltech.TaxCalculation.Api/Dockerfile",
                 "context": "${workspaceFolder}",
                 "pull": true
             },
             "netCore": {
-                "appProject": "${workspaceFolder}/Campbelltech.PostalCodeTax.Api/Campbelltech.PostalCodeTax.Api.csproj"
+                "appProject": "${workspaceFolder}/Campbelltech.TaxCalculation.Api/Campbelltech.TaxCalculation.Api.csproj"
             }
         },
         {
@@ -62,13 +62,13 @@
                 "build"
             ],
             "dockerBuild": {
-                "tag": "campbelltechpostalcodetax:latest",
-                "dockerfile": "${workspaceFolder}/Campbelltech.PostalCodeTax.Api/Dockerfile",
+                "tag": "campbelltechtaxcalculation:latest",
+                "dockerfile": "${workspaceFolder}/Campbelltech.TaxCalculation.Api/Dockerfile",
                 "context": "${workspaceFolder}",
                 "pull": true
             },
             "netCore": {
-                "appProject": "${workspaceFolder}/Campbelltech.PostalCodeTax.Api/Campbelltech.PostalCodeTax.Api.csproj"
+                "appProject": "${workspaceFolder}/Campbelltech.TaxCalculation.Api/Campbelltech.TaxCalculation.Api.csproj"
             }
         },
         {
@@ -79,7 +79,7 @@
             ],
             "dockerRun": {},
             "netCore": {
-                "appProject": "${workspaceFolder}/Campbelltech.PostalCodeTax.Api/Campbelltech.PostalCodeTax.Api.csproj",
+                "appProject": "${workspaceFolder}/Campbelltech.TaxCalculation.Api/Campbelltech.TaxCalculation.Api.csproj",
                 "enableDebugging": true
             }
         },
@@ -91,7 +91,7 @@
             ],
             "dockerRun": {},
             "netCore": {
-                "appProject": "${workspaceFolder}/Campbelltech.PostalCodeTax.Api/Campbelltech.PostalCodeTax.Api.csproj"
+                "appProject": "${workspaceFolder}/Campbelltech.TaxCalculation.Api/Campbelltech.TaxCalculation.Api.csproj"
             }
         }
     ]
