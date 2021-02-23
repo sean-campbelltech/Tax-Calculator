@@ -18,7 +18,7 @@ If you plan to run the Tax-Calculator solutions in Docker, you need to create an
 docker network create --attachable -d bridge taxCalculatorNet
 ```
 
-Then run the following command to list all you Docker networks to see if the newly created taxCalculatorNet network has been created.
+Then run the following command to list all you Docker networks to see if the newly created `taxCalculatorNet` network has been created.
 
 ```
 docker network ls
@@ -28,7 +28,7 @@ docker network ls
 
 If you already have a Microsoft SQL server instance running on a staging server or in Docker, you can skip this step. However, if you plan to connect from your Docker containers to a local Microsoft SQL server instance, it is advised that you rather run a new instance of Microsoft SQL server in Docker, because from the containers perspective, localhost means local to the container and not local to the host.
 
-Execute the following command to run Microsoft SQL server express in Docker:
+Execute the following command to run Microsoft SQL Server Express in Docker:
 
 ```
 docker run --name sql-container \
@@ -49,11 +49,15 @@ Run following SQL scripts from your client tools (SSMS or Azure Data Studio or V
 
 **1. Running the Applications in Docker (Preferred):**
 
-You can run all the applications by copying the [docker-compose.yml]() into a directory and executing the following command from that directory:
+You can run all the applications by copying the [docker-compose.yml](https://github.com/sean-campbelltech/Tax-Calculator/blob/main/Docker/docker-compose.yml) into a directory and executing the following command from that directory:
 
 ```
 docker-compose up -d
 ```
+
+If you do not have Docker Compose installed, please follow the steps in the following link:
+
+[https://docs.docker.com/compose/install/](https://docs.docker.com/compose/install/)
 
 **2. Running the Applications in VS Code:**
 
@@ -73,11 +77,14 @@ If you choose to run the applications from your local machine in VS Code, you wi
 
 - Factory Method
 
-  - Describe where and why Factory Method was used.
+  - A transient factory method was used to abstract the tax calculation logic. More specifically, the factory uses the tax type to determine which implementation of ITaxCalculation it should instantiate. 
+  - This allows us to inject a factory resolver Func using dependency injection in the client logic to resolve the ITaxCalculation implementation.
+  - The transient factory can be found under [Backend/Campbelltech.TaxCalculation/Campbelltech.TaxCalculation.Domain/Calculations/](https://github.com/sean-campbelltech/Tax-Calculator/blob/main/Backend/Campbelltech.TaxCalculation/Campbelltech.TaxCalculation.Domain/Calculations/TaxCalculationFactory.cs)
 
 - Builder
 
-  - Describe where and why Builder pattern was used.
+  - A fluent builder was used segregate the construction of the TaxCalculationModel from its representation. This is found under [Backend/Campbelltech.TaxCalculation/Campbelltech.TaxCalculation.Domain/Mapping/TaxCalculationModelBuilder.cs](https://github.com/sean-campbelltech/Tax-Calculator/blob/main/Backend/Campbelltech.TaxCalculation/Campbelltech.TaxCalculation.Domain/Mapping/TaxCalculationModelBuilder.cs)
+  - Another fluent builder was used to map the result Tuple (HTTP status code + TaxCalculationResponse) that is returned to controller method after the main tax calculations have been processed. This is found under [Backend/Campbelltech.TaxCalculation/Campbelltech.TaxCalculation.Domain/Mapping/ResultBuilder.cs ](https://github.com/sean-campbelltech/Tax-Calculator/blob/main/Backend/Campbelltech.TaxCalculation/Campbelltech.TaxCalculation.Domain/Mapping/ResultBuilder.cs)
 
 - Repository Pattern
 
